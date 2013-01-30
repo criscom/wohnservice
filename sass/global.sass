@@ -1,0 +1,130 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global SASS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* admin bereich */
+
+.logged-in #region-branding
+	margin-top: 20px
+
+/* @group Projekte Detail */
+
+.group_projekt_projektbilder
+	float: right
+	width: 640px 
+/*	width: 67%  */
+
+.group_projektdetail_projektinfos
+	float: left
+	width: 320px
+/*	width: 33%  */
+	
+.group_projekte_infos_links
+	float: left
+	width: 50%
+	
+	
+.group_projekte_infos_rechts
+	float: right
+	width: 50%
+	
+.group_projektdetail_weitereinfos
+	clear: both
+	
+.ds-3col-stacked-equal .group-left
+	clear: right
+	
+/* @group Image Gallery in Projekte Detail */
+
+.field-projekt-bilder-klein img
+	float: left
+	z-index: 10
+	margin: 3px 4px 3px 0px
+
+.field-projekt-bilder-klein:nth-child(5n+5) img
+	margin-right: 0px
+
+
+.field-projekt-bilder-klein img:hover
+	background-image: url('../images/projekte_frame-projekte-bilder-klein.png')
+	background-repeat: no-repeat
+	background-position: top left
+	height: 92px
+	width: 156px
+/* @end Image Gallery */
+	
+/* @group Stammdaten Flächendaten Technische Daten Kaufdaten */
+
+.node-type-projekte .group-left
+	clear: both
+
+.outer-wrapper
+	display: block
+	clear: left
+
+	.label-inline
+		float: left
+
+.flaechendaten .sonstiges-field-items
+	display: block
+
+	div.second-column
+		float: left
+	
+	
+/* @end Stammdaten */
+
+/* @group filter */
+
+.views-exposed-form .views-exposed-widget
+	float: none
+
+/* @end filter */
+
+
+/* @end Projekte Detail */
+
+/* @group Bauträger Detail */
+
+.group_bautraeger_logo_data
+	display: block
+	
+	.field-bautraeger-logo
+		float: left
+	
+	.field-bautraeger-daten
+		margin-left: 200px
+
+.aktuelle-projekte-field-item, .weitere-projekte-field
+	float: left
+
+.aktuelle-projekte-field-item.even
+	margin-right: 9px
+	
+.view-mode-bautraeger_weitere h3 /* Überschriften unter Weitere Projekte auf der Bauträger Detailseite */
+	font-size: 0.9em
+	margin: 10px 0 
+	
+	a:link, a:visited, a:hover, a:active
+		text-decoration: none
+	
+
+.weitere-projekte-field
+	margin-right: 8px
+
+.weitere-projekte-field:nth-child(3n+4)
+	margin-right: 0px
+
+/* @group Team Referenz Bauträger Detail */
+
+.field-bautraeger-team-reference .node-team
+	float: left
+
+/* @end Team Referenz Bauträger Detail */
+		
+/* @end Bauträger Detail */
+
+/* Loading Allgemeines Kontaktformular in a Colorbox */
+
+#colorbox article.node-webform
+	background-color: white
+	padding: 20px

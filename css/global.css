@@ -1,0 +1,160 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global SASS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/* admin bereich */
+/* line 6, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.logged-in #region-branding {
+  margin-top: 20px;
+}
+
+/* @group Projekte Detail */
+/* line 11, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.group_projekt_projektbilder {
+  float: right;
+  width: 640px;
+}
+
+/*	width: 67%  */
+/* line 16, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.group_projektdetail_projektinfos {
+  float: left;
+  width: 320px;
+}
+
+/*	width: 33%  */
+/* line 21, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.group_projekte_infos_links {
+  float: left;
+  width: 50%;
+}
+
+/* line 26, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.group_projekte_infos_rechts {
+  float: right;
+  width: 50%;
+}
+
+/* line 30, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.group_projektdetail_weitereinfos {
+  clear: both;
+}
+
+/* line 33, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.ds-3col-stacked-equal .group-left {
+  clear: right;
+}
+
+/* @group Image Gallery in Projekte Detail */
+/* line 38, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.field-projekt-bilder-klein img {
+  float: left;
+  z-index: 10;
+  margin: 3px 4px 3px 0px;
+}
+
+/* line 43, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.field-projekt-bilder-klein:nth-child(5n+5) img {
+  margin-right: 0px;
+}
+
+/* line 47, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.field-projekt-bilder-klein img:hover {
+  background-image: url("../images/projekte_frame-projekte-bilder-klein.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 92px;
+  width: 156px;
+}
+
+/* @end Image Gallery */
+/* @group Stammdaten Flächendaten Technische Daten Kaufdaten */
+/* line 57, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.node-type-projekte .group-left {
+  clear: both;
+}
+
+/* line 60, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.outer-wrapper {
+  display: block;
+  clear: left;
+}
+/* line 64, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.outer-wrapper .label-inline {
+  float: left;
+}
+
+/* line 67, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.flaechendaten .sonstiges-field-items {
+  display: block;
+}
+/* line 70, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.flaechendaten .sonstiges-field-items div.second-column {
+  float: left;
+}
+
+/* @end Stammdaten */
+/* @group filter */
+/* line 78, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.views-exposed-form .views-exposed-widget {
+  float: none;
+}
+
+/* @end filter */
+/* @end Projekte Detail */
+/* @group Bauträger Detail */
+/* line 88, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.group_bautraeger_logo_data {
+  display: block;
+}
+/* line 91, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.group_bautraeger_logo_data .field-bautraeger-logo {
+  float: left;
+}
+/* line 94, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.group_bautraeger_logo_data .field-bautraeger-daten {
+  margin-left: 200px;
+}
+
+/* line 97, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.aktuelle-projekte-field-item, .weitere-projekte-field {
+  float: left;
+}
+
+/* line 100, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.aktuelle-projekte-field-item.even {
+  margin-right: 9px;
+}
+
+/* line 103, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.view-mode-bautraeger_weitere h3 {
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+/* line 107, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.view-mode-bautraeger_weitere h3 a:link, .view-mode-bautraeger_weitere h3 a:visited, .view-mode-bautraeger_weitere h3 a:hover, .view-mode-bautraeger_weitere h3 a:active {
+  text-decoration: none;
+}
+
+/* line 111, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.weitere-projekte-field {
+  margin-right: 8px;
+}
+
+/* line 114, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.weitere-projekte-field:nth-child(3n+4) {
+  margin-right: 0px;
+}
+
+/* @group Team Referenz Bauträger Detail */
+/* line 119, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+.field-bautraeger-team-reference .node-team {
+  float: left;
+}
+
+/* @end Team Referenz Bauträger Detail */
+/* @end Bauträger Detail */
+/* Loading Allgemeines Kontaktformular in a Colorbox */
+/* line 128, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+#colorbox article.node-webform {
+  background-color: white;
+  padding: 20px;
+}
