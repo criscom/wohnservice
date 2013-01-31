@@ -4,6 +4,10 @@ core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot-wohnservice.png'
 base theme = 'omega'
+
+scripts[] = js/jstemplate.js
+
+
 regions[page_top] = 'Page Top'
 regions[page_bottom] = 'Page Bottom'
 regions[content] = 'Content'
@@ -348,4 +352,8 @@ settings[alpha_region_footer_second_columns] = '12'
 settings[alpha_region_footer_second_suffix] = ''
 settings[alpha_region_footer_second_weight] = '2'
 settings[alpha_region_footer_second_css] = ''
+
+breakpoints[mobile] = (min-width: 0px)
+breakpoints[narrow] = (min-width: 740px)
+breakpoints[normal] = (min-width: 980px)
 version = '1.x'

@@ -43,7 +43,7 @@
 
 /* line 34, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .ds-3col-stacked-equal .group-left {
-  clear: right;
+  clear: both;
 }
 
 /* line 37, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
@@ -72,44 +72,35 @@
   margin-right: 0px;
 }
 
-/* line 59, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
-.field-projekt-bilder-klein img:hover {
-  background-image: url("../images/projekte_frame-projekte-bilder-klein.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-  height: 92px;
-  width: 156px;
-}
-
 /* @end Image Gallery */
 /* @group Stammdaten Flächendaten Technische Daten Kaufdaten */
-/* line 69, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 70, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .node-type-projekte .group-left {
   clear: both;
 }
 
-/* line 72, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 73, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .outer-wrapper {
   display: block;
   clear: left;
 }
-/* line 76, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 77, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .outer-wrapper .label-inline {
   float: left;
 }
 
-/* line 79, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 80, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .flaechendaten .sonstiges-field-items {
   display: block;
 }
-/* line 82, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 83, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .flaechendaten .sonstiges-field-items div.second-column {
   float: left;
 }
 
 /* @end Stammdaten */
 /* @group filter */
-/* line 90, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 91, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .views-exposed-form .views-exposed-widget {
   float: none;
 }
@@ -117,60 +108,60 @@
 /* @end filter */
 /** @end Projekte Detail ** */
 /*@group Bauträger Detail */
-/* line 100, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 101, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .group_bautraeger_logo_data {
   display: block;
 }
-/* line 103, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 104, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .group_bautraeger_logo_data .field-bautraeger-logo {
   float: left;
   margin-right: 2%;
   width: 42%;
 }
-/* line 109, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 110, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .group_bautraeger_logo_data .field-bautraeger-daten {
   float: left;
   width: 56%;
 }
 
-/* line 113, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 114, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .aktuelle-projekte-field-item, .weitere-projekte-field {
   float: left;
 }
 
-/* line 116, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 117, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .aktuelle-projekte-field-item.even {
   margin-right: 9px;
 }
 
-/* line 119, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 120, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .view-mode-bautraeger_weitere h3 {
   font-size: 0.9em;
   margin: 10px 0;
 }
-/* line 123, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 124, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .view-mode-bautraeger_weitere h3 a:link, .view-mode-bautraeger_weitere h3 a:visited, .view-mode-bautraeger_weitere h3 a:hover, .view-mode-bautraeger_weitere h3 a:active {
   text-decoration: none;
 }
 
 /* Stellt sicher, dass die Überschrift "Weitere Projekte" im iPad unter den Bildern von Aktuelle Projekte steht */
-/* line 127, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 128, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .field-weitere-projekte {
   clear: both;
 }
 
-/* line 130, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 131, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .weitere-projekte-field {
   margin-right: 8px;
 }
 
-/* line 133, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 134, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .weitere-projekte-field:nth-child(3n+4) {
   margin-right: 0px;
 }
 
 /* @group Team Referenz Bauträger Detail */
-/* line 138, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 139, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .field-bautraeger-team-reference .node-team {
   float: left;
 }
@@ -178,7 +169,7 @@
 /* @end Team Referenz Bauträger Detail */
 /** @end Bauträger Detail ** */
 /* Loading Allgemeines Kontaktformular in a Colorbox */
-/* line 148, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
+/* line 149, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 #colorbox article.node-webform {
   background-color: white;
   padding: 20px;
