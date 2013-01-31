@@ -8,14 +8,15 @@
 
 /* @group Projekte Detail */
 
+.ds-3col-stacked-equal.node-projekte .group-header
+	width: 100%
+
 .group_projekt_projektbilder
 	float: right
-//	width: 640px 
 	width: 67% 
 
 .group_projektdetail_projektinfos
 	float: left
-//	width: 320px
 	width: 33%  
 	
 .group_projekte_infos_links
@@ -101,14 +102,18 @@
 	
 	.field-bautraeger-logo
 		float: left
+		margin-right: 2%
+		width: 42%
+
 	
 	.field-bautraeger-daten
-		margin-left: 200px
+		float: left
+		width: 56%
 
 .aktuelle-projekte-field-item, .weitere-projekte-field
 	float: left
 
-.aktuelle-projekte-field-item.even
+.aktuelle-projekte-field-item.even /* Margin zwischen den Aktuelle Projekte Bildern auf der Bauträger Detail ==> gehört eher ins narrow.css */
 	margin-right: 9px
 	
 .view-mode-bautraeger_weitere h3 /* Überschriften unter Weitere Projekte auf der Bauträger Detailseite */
@@ -117,7 +122,10 @@
 	
 	a:link, a:visited, a:hover, a:active
 		text-decoration: none
-	
+
+/* Stellt sicher, dass die Überschrift "Weitere Projekte" im iPad unter den Bildern von Aktuelle Projekte steht */
+.field-weitere-projekte	
+	clear: both
 
 .weitere-projekte-field
 	margin-right: 8px
