@@ -10,17 +10,13 @@
 /* line 11, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .group_projekt_projektbilder {
   float: right;
-  width: 640px;
 }
 
-/*	width: 67%  */
 /* line 16, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .group_projektdetail_projektinfos {
   float: left;
-  width: 320px;
 }
 
-/*	width: 33%  */
 /* line 21, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
 .group_projekte_infos_links {
   float: left;
