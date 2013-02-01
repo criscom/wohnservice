@@ -1,0 +1,1 @@
+/* JQuery Template für wohnservice.at - alle JQuery Befehle */(function(e){e(document).ready(function(){e("div.projekt-bild-gross").children("a").addClass("colorbox init-colorbox-processed cboxElement");e("div.projekt-bild-gross").children("a").attr("rel","galerie_projekte")})})(jQuery);
