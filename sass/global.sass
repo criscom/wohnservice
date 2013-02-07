@@ -7,12 +7,16 @@
 	margin-top: 20px
 
 body
-	background: #90a490 url('../images/body-bg.png') no-repeat top left
+	background: #90a490 url('../images/body-bg.png') no-repeat top center
+	
+	
+html, body, .section-header, .section-content
 	height: 100%
 
-.page
-	position: relative
-	min-height: 100%
+
+//body > .section.content
+//	height: auto
+//	min-height: 100%
 	
 //.zone-content
 //	position: relative
@@ -218,13 +222,19 @@ body
 
 .zone-footer-wrapper
 	
-	background: url('../images/footer-bg-no-line.png') no-repeat bottom left
+	background: url('../images/footer-bg-no-line.png') no-repeat bottom center
+	clear: both
+	position: relative
 	width: 100%
 	height: 270px
-	position: relative
-	bottom: 0
-	left: 0
+	z-index: 10
 
+.region-footer-second .block-2 .content
+	display: block
+	
+	.footer-middle-left
+		float: left
+		padding-right: 1%
 
 /* @end Footer */
 
