@@ -11,15 +11,14 @@
 .ds-3col-stacked-equal.node-projekte .group-header
 	width: 100%
 
-.group_projekt_projektbilder
+.group_projekt_projektbilder /* Großes Bild rechts vom Titel */
 	float: right
-	width: 64%
-	margin-left: 3% 
+	width: 66.1458333% /* 960px / 635px */
+	margin-left: 1.354166667% /* 960 px / 13 px */
 
-.group_projektdetail_projektinfos
+.group_projektdetail_projektinfos /* Info-Block unterhalb des Titels */
 	float: left
-	width: 30%
-	margin-right: 3%  
+	width: 31.25% /* 960px / 300px */
 	
 .group_projekte_infos_links
 	float: left
@@ -54,7 +53,7 @@
 .field-projekt-bilder-klein img
 	float: left
 	z-index: 10
-	margin: 3px 4px 3px 0px
+	margin: 3px 4px 3px 0px /* 635 px / 12 px / 1.88976378% */
 
 .field-projekt-bilder-klein:nth-child(5n+5) img
 	margin-right: 0px
@@ -100,6 +99,36 @@
 
 /*** @end Projekte Detail ***/
 
+/*** @group Wohnungstypen Detail ***/
+
+.group_wht_teaser
+	display: block
+	
+	.field-objektart-reloaded, .groesse-zimmer
+		float: left
+		
+.group_objekt_objektbilder/* Großes Bild rechts vom Titel */
+	float: right
+	width: 66.1458333% /* 960px / 635px */
+	margin-left: 1.354166667% /* 960 px / 13 px */
+
+.group_objektdetail_objektinfos /* Info-Block unterhalb des Titels */
+	float: left
+	width: 31.25% /* 960px / 300px */
+	
+.group_wohnungstypen_stammdaten
+	clear: both
+	
+.field-wohnungstyp-bilder-klein img
+	float: left
+	z-index: 10
+	margin: 3px 4px 3px 0px /* 635 px / 12 px / 1.88976378% */
+
+.field-wohnungstyp-bilder-klein:nth-child(5n+5) img
+	margin-right: 0px
+
+/*** @end Wohnungstypen Detail ***/
+
 /** @group Bauträger Detail **/
 
 .group_bautraeger_logo_data
@@ -142,6 +171,8 @@
 
 .field-bautraeger-team-reference .node-team
 	float: left
+
+
 
 /* @end Team Referenz Bauträger Detail */
 		
