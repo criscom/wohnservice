@@ -1,34 +1,55 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global SASS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
-$header: #768f76 // Farbe ==> grün für Überschriften wie Gasse und Bezirk
+$green: #768f76 // Farbe ==> grün für Überschriften wie Gasse und Bezirk
+$bodygreen: #90a490
 $box: #586b58 // Hintergrundfarbe ==> grün der Stammdaten Flächendaten etc Boxen; Boxen haben Verläufe als Hintergrund, dieses Grün wurde vom untersten Ende der Box gemessen 
-$footer: #cfcfcf // Hintergrundfarbe ==> grau vom Footer
+$grey: #eaeaea // Hintergrundfarbe ==> grau vom Footer
+$fontgrey: #404040
+$mainfont: Arial, Verdana, serif // Main Font for the Site, old and boring ;)
+$lhmain: 1.125em // Specifies the main line height for the site, which is 18px; 16*1.125=18
+$size18: 1.125em // Schriftgröße 18 px für Title und Header ==> Bauträger Übersicht; Projekt Detail; Stammdaten Überschrift; 16*1.125=18
+$size14: 0.875em // Schriftgröße für den Standardtext als auch für die Titel/Header in der Projektübersicht; 16*0.875=14
+$size12: 0.75em  // Schriftgröße 12px
 
-
-/* admin bereich */
+/* ******************************* */
+/* ## admin bereich ## */
 
 .logged-in #region-branding
 	margin-top: 20px
+	
+/* @end admin bereich */
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## general declarations ## */
 
 body
-	background: $footer url('../images/body-bg.png') no-repeat top center
-	
-	
-html, body, .section-header, .section-content
-	height: 100%
+	background: $bodygreen url('../images/body-bg-big-line.png') no-repeat top center
+	font-family: $mainfont
+	font-size: 100%
+	line-height: $lhmain
+	margin: 0
+	padding: 0
+	color: $fontgrey
 
+.body-wrapper
+	background: $grey url('../images/body-wrapper.png') repeat-x top left
+	height: 84px
 
-//body > .section.content
-//	height: auto
-//	min-height: 100%
+#zone-content .region-content // Main content area; here we set the min height to the green "window" of the background in case the actual content area is smaller so that the footer stays in the gray area
+//	min-height: 945px
+	min-height: 100%
 	
-//.zone-content
-//	position: relative
-//	min-height: 100%
-//	clear: both
+p, .field-content
+	color: $fontgrey
+	font-size: $size14
+
+/* @end general declarations */
+/* ------------------------------- */
 	
-/* @group Logo und Hauptmenü */
+/* ******************************* */
+/* ## @group Logo und Hauptmenü ## */
 
 .region-menu
 	height: 85px
@@ -49,6 +70,46 @@ html, body, .section-header, .section-content
 	clear: both
 
 /* @end Logo und Hauptmenü */
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## @group Projekte Übersicht >> Tabelle ## */
+
+tr td
+	width: 220px !important
+	height: 213px
+	background: transparent url('../images/projekt-detail-bg.png') no-repeat top left
+	vertical-align: top
+	padding-top: 15px
+	padding-left: 5px
+
+// tr:hover td,
+// tr.even:hover td.active,
+// tr.odd:hover td.active,
+tr td:hover
+
+	background: transparent url('../images/projekt-detail-bg-aktiv.png') no-repeat top left
+	width: 220px !important
+	height: 213px
+
+.views-field-title
+	margin-bottom: 12px
+
+.views-field-title .field-content a
+	color: $green
+	text-decoration: none
+
+.views-field-field-groesse
+	margin-top: 12px
+	float: left
+	margin-right: 80px
+	
+.views-field-field-preis
+	margin-top: 12px
+	float: left
+
+/* @end Projekte Übersicht >> Tabelle */
+
 
 /* @group Projekte Detail */
 
@@ -101,14 +162,6 @@ html, body, .section-header, .section-content
 
 .field-projekt-bilder-klein:nth-child(5n+5) img
 	margin-right: 0px
-
-//Funktioniert nicht
-// .field-projekt-bilder-klein img:hover
-//	background-image: url('../images/projekte_frame-projekte-bilder-klein.png')
-//	background-repeat: no-repeat
-//	background-position: top left
-//	height: 92px
-//	width: 156px
 	
 /* @end Image Gallery */
 	
@@ -129,7 +182,23 @@ html, body, .section-header, .section-content
 
 	div.second-column
 		float: left
-	
+
+.node-projekte.view-mode-full .group-left,
+.node-projekte.view-mode-full .group-middle,
+.node-projekte.view-mode-full .group-right
+	width: 30%
+	margin-right: 5%
+
+.node-projekte.view-mode-full .group-right
+	margin-right: 0
+
+.node-projekte.view-mode-full .group-left,
+.node-projekte.view-mode-full .group-middle,
+.node-projekte.view-mode-full .group-right>div.group_technische_daten
+	background: $box url(../images/datenbox-bg.png) repeat-x top left
+
+.node-projekte.view-mode-full .group-right>div.group_kaufdaten
+	background: $grey url(../images/datenbox-kauf-bg.png) repeat-x top left	
 	
 /* @end Stammdaten */
 
@@ -225,21 +294,15 @@ html, body, .section-header, .section-content
 
 /* @group Footer */
 
-.zone-footer-wrapper
-	
-	background: url('../images/footer-bg-no-line.png') no-repeat bottom center
-	clear: both
-	position: relative
-	width: 100%
+#section-footer .zone-footer-wrapper
+	background-image: url('../images/footer-strip.png')
+	background-repeat: repeat-x
+	background-position: bottom center
 	height: 270px
-	z-index: 10
-
-.region-footer-second .block-2 .content
-	display: block
 	
-	.footer-middle-left
-		float: left
-		padding-right: 1%
+.footer-middle-left.google
+	float: left
+
 
 /* @end Footer */
 
