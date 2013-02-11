@@ -5,12 +5,14 @@ $green: #768f76 // Farbe ==> grün für Überschriften wie Gasse und Bezirk
 $bodygreen: #90a490
 $box: #586b58 // Hintergrundfarbe ==> grün der Stammdaten Flächendaten etc Boxen; Boxen haben Verläufe als Hintergrund, dieses Grün wurde vom untersten Ende der Box gemessen 
 $grey: #eaeaea // Hintergrundfarbe ==> grau vom Footer
+$orange: #ef7900 // Orange vom Dreieck genommen
 $fontgrey: #404040
 $mainfont: Arial, Verdana, serif // Main Font for the Site, old and boring ;)
 $lhmain: 1.125em // Specifies the main line height for the site, which is 18px; 16*1.125=18
 $size18: 1.125em // Schriftgröße 18 px für Title und Header ==> Bauträger Übersicht; Projekt Detail; Stammdaten Überschrift; 16*1.125=18
 $size14: 0.875em // Schriftgröße für den Standardtext als auch für die Titel/Header in der Projektübersicht; 16*0.875=14
 $size12: 0.75em  // Schriftgröße 12px
+$size10: 0.625em // Schriftgröße 10px
 
 /* ******************************* */
 /* ## admin bereich ## */
@@ -37,9 +39,17 @@ body
 	background: $grey url('../images/body-wrapper.png') repeat-x top left
 	height: 84px
 
+#zone-content
+	margin-top: 15px
+
 #zone-content .region-content // Main content area; here we set the min height to the green "window" of the background in case the actual content area is smaller so that the footer stays in the gray area
-//	min-height: 945px
-	min-height: 100%
+	min-height: 750px
+//	min-height: 100%
+
+h1, h2
+	font-family: $mainfont
+	font-size: $size18
+	color: $green
 	
 p, .field-content
 	color: $fontgrey
@@ -75,24 +85,30 @@ p, .field-content
 /* ******************************* */
 /* ## @group Projekte Übersicht >> Tabelle ## */
 
-tr td
-	width: 220px !important
-	height: 213px
-	background: transparent url('../images/projekt-detail-bg.png') no-repeat top left
+.view-projekt-bersicht-frei-finanzierte-projekte tr td
+
+	background: $grey
 	vertical-align: top
 	padding-top: 15px
 	padding-left: 5px
+	border-bottom: 2px solid rgba(0, 0, 0, .0)
+	-webkit-background-clip: padding-box /* for Safari */
+	background-clip: padding-box /* for IE9+, Firefox 4+, Opera, Chrome */
 
 // tr:hover td,
 // tr.even:hover td.active,
 // tr.odd:hover td.active,
-tr td:hover
+.view-projekt-bersicht-frei-finanzierte-projekte tr td:hover
 
-	background: transparent url('../images/projekt-detail-bg-aktiv.png') no-repeat top left
-	width: 220px !important
-	height: 213px
+	background: $orange
 
-.views-field-title
+.view-projekt-bersicht-frei-finanzierte-projekte tr td.col-1,
+.view-projekt-bersicht-frei-finanzierte-projekte tr td.col-2
+	border-right: 2px solid rgba(0, 0, 0, .0)
+	-webkit-background-clip: padding-box /* for Safari */
+	background-clip: padding-box /* for IE9+, Firefox 4+, Opera, Chrome */
+
+.view-projekt-bersicht-frei-finanzierte-projekte .views-field-title
 	margin-bottom: 12px
 
 .views-field-title .field-content a
@@ -290,9 +306,33 @@ tr td:hover
 /* @end Team Referenz Bauträger Detail */
 		
 /*** @end Bauträger Detail ***/
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## @group News ## */
 
 
-/* @group Footer */
+
+/* @end News */
+/* ------------------------------- */
+
+.node-news .field-image
+	float: left
+	margin-right: 2%
+
+.group_news_header .field-title
+	float: left
+
+.group_news_header .beitragsdatum
+	float: right
+	color: $green
+	font-size: $size10
+
+.group_news_inhalt
+	clear: both
+
+/* ******************************* */
+/* ## @group Footer ## */
 
 #section-footer .zone-footer-wrapper
 	background-image: url('../images/footer-strip.png')

@@ -1,3 +1,61 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+/* ******************************* */
+/* ## @group Projekte Übersicht >> Tabelle ## */
+.view-projekt-bersicht-frei-finanzierte-projekte tr td {
+  width: 220px !important;
+  height: 213px;
+  background: transparent url("../images/projekt-detail-bg.png") no-repeat top left;
+  vertical-align: top;
+  padding-top: 15px;
+  padding-left: 5px; }
+
+.view-projekt-bersicht-frei-finanzierte-projekte tr td:hover {
+  background: transparent url("../images/projekt-detail-bg-aktiv.png") no-repeat top left;
+  width: 220px !important;
+  height: 213px; }
+
+/* @end Projekte Übersicht >> Tabelle ## */
+/* @group Projekte Detail */
+.ds-3col-stacked-equal.node-projekte .group-header {
+  width: 940px; }
+
+.group_projekt_projektbilder {
+  float: right;
+  width: 635px;
+  margin-left: 13px; }
+
+.group_projektdetail_projektinfos {
+  float: left;
+  width: 292px; }
+
+.group_projekte_infos_links {
+  float: left;
+  width: 45%;
+  margin-right: 5%; }
+
+/* @group Image Gallery in Projekte Detail */
+.field-projekt-bilder-klein img {
+  float: left;
+  z-index: 10;
+  margin: 3px 3px 3px 0px; }
+
+/* @end Image Gallery */
+/* @group Stammdaten Flächendaten Technische Daten Kaufdaten */
+.node-projekte.view-mode-full .group-left,
+.node-projekte.view-mode-full .group-middle,
+.node-projekte.view-mode-full .group-right {
+  width: 300px;
+  margin-right: 20px; }
+
+.node-projekte.view-mode-full .group-right {
+  margin-right: 0; }
+
+/* @end Stammdaten */
+/* @group filter */
+.views-exposed-form .views-exposed-widget {
+  float: none; }
+
+/* @end filter */
+/** @end Projekte Detail ** */
