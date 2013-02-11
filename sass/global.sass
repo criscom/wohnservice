@@ -1,13 +1,18 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global SASS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
+$header: #768f76 // Farbe ==> grün für Überschriften wie Gasse und Bezirk
+$box: #586b58 // Hintergrundfarbe ==> grün der Stammdaten Flächendaten etc Boxen; Boxen haben Verläufe als Hintergrund, dieses Grün wurde vom untersten Ende der Box gemessen 
+$footer: #cfcfcf // Hintergrundfarbe ==> grau vom Footer
+
+
 /* admin bereich */
 
 .logged-in #region-branding
 	margin-top: 20px
 
 body
-	background: #90a490 url('../images/body-bg.png') no-repeat top center
+	background: $footer url('../images/body-bg.png') no-repeat top center
 	
 	
 html, body, .section-header, .section-content
