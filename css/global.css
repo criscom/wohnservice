@@ -34,7 +34,7 @@ body {
 }
 
 /* line 45, /Applications/MAMP/htdocs/drupal-7.17/sites/default/themes/wohnservice/sass/global.sass */
-#zone-content .region-content {
+body.not-front #zone-content .region-content {
   min-height: 750px;
 }
 
