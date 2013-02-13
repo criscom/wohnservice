@@ -3,6 +3,9 @@
 
 $green: #768f76 // Farbe ==> grün für Überschriften wie Gasse und Bezirk
 $bodygreen: #90a490
+$boxgreen: #718471
+$boxfontgreen: #d7eed7
+$titlewhite: #ffffff
 $box: #586b58 // Hintergrundfarbe ==> grün der Stammdaten Flächendaten etc Boxen; Boxen haben Verläufe als Hintergrund, dieses Grün wurde vom untersten Ende der Box gemessen 
 $grey: #eaeaea // Hintergrundfarbe ==> grau vom Footer
 $orange: #ef7900 // Orange vom Dreieck genommen
@@ -53,7 +56,11 @@ h1, h2
 	
 p, .field-content
 	color: $fontgrey
-	font-size: $size14
+
+h1 a, h2 a, .views-field-title a
+	text-decoration: none
+	color: $green
+	font-weight: normal
 
 /* @end general declarations */
 /* ------------------------------- */
@@ -78,8 +85,70 @@ p, .field-content
 				
 .section-content
 	clear: both
+	
+tr.even, tr.odd
+	background-color: none
+	border-bottom: none
 
 /* @end Logo und Hauptmenü */
+/* ------------------------------- */
+
+
+/* ******************************* */
+/* ## @group Frontpage News und Teaserboxen## */
+
+.front .grid-4.region-postscript-third
+	margin-left: 2%
+
+.front .grid-4 table tr td
+	background: $green
+
+//.front .grid-4.region-postscript-second table tr td
+//	border-left: 3px solid rgba(0, 0, 0, .0)
+//	-webkit-background-clip: padding-box /* for Safari */
+//	background-clip: padding-box /* for IE9+, Firefox 4+, Opera, Chrome */
+		
+.front .grid-4 table tr td:hover
+	background: $orange
+
+.front .view-news .views-row
+	border-bottom: 1px solid $bodygreen
+
+/* Schriftgrößen der Überschriften in den Teaserboxen und Newsbox auf 16 px 18*0.9==>16*/
+.front .view-news h2 a
+	font-size: 0.9em
+
+.front .view-frontpage-teaser-boxen .views-field-title a
+	color: $titlewhite
+
+.front .view-frontpage-teaser-boxen p
+	color: $boxfontgreen
+	
+/* Promo Box */
+
+.view-frontpage-promo-box
+	background-color: $boxgreen
+	padding: 15px 2%
+	
+.promo-title a
+	font-size: 1.15em
+	color: $titlewhite!important
+
+.promo-content
+	margin: 30px 0 20px 0
+	
+
+.view-frontpage-promo-box .field-name-field-promo-bilder-klein div div img
+	margin-top: 10px
+
+
+.view-frontpage-promo-box .field-name-field-promo-bilder-klein div div.even img
+	float: left
+	margin-right: 2%
+
+
+
+/* @end Frontpage News und Teaserboxen*/
 /* ------------------------------- */
 
 /* ******************************* */

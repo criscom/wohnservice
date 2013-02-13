@@ -5,9 +5,11 @@
 
 
 $green: #768f76 // Farbe ==> grün für Überschriften wie Gasse und Bezirk
+$boxgreen: #718471
 $bodygreen: #90a490
 $box: #586b58 // Hintergrundfarbe ==> grün der Stammdaten Flächendaten etc Boxen; Boxen haben Verläufe als Hintergrund, dieses Grün wurde vom untersten Ende der Box gemessen 
 $grey: #eaeaea // Hintergrundfarbe ==> grau vom Footer
+$newsgrey: #eeeeee
 $fontgrey: #404040
 $mainfont: Arial, Verdana, serif // Main Font for the Site, old and boring ;)
 $lhmain: 1.125em // Specifies the main line height for the site, which is 18px; 16*1.125=18
@@ -16,14 +18,93 @@ $size14: 0.875em // Schriftgröße für den Standardtext als auch für die Titel
 $size12: 0.75em  // Schriftgröße 12px
 $size10: 0.625em // Schriftgröße 10px
 
+
+.front .container-12 .grid-3
+	width: 220px
+
+
 /* ******************************* */
 /* ## @group Flexislider Frontpage ## */
 
-.flexslider
+.flexslider,
 .flex-nav-container
-	width: 700px
+	width: 695px!important
 
 /* @end Flexislider Frontpage */
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## @group Frontpage Teaser Boxen ## */
+
+
+.front .container-12 .grid-4.region-postscript-first,
+.front .container-12 .grid-4.region-postscript-second
+	width: 300px
+	margin-right: 20px
+
+.front .container-12 .grid-4.region-postscript-third
+	width: 300px
+
+.front .grid-4.region-postscript-first,
+.front .container-12 .grid-4.region-postscript-second
+	margin-left: 0px
+	
+
+.front .grid-4.region-postscript-third
+	margin-right: 0px
+	
+
+.front .grid-4 table tr td
+
+//	width: 300px !important
+	vertical-align: top
+//	padding-top: 15px
+//	padding-left: 5px
+
+.front .grid-4.region-postscript-first table tr td,
+.front .grid-4.region-postscript-second	table tr td
+	vertical-align: top
+	height: 225px
+	background: url('../images/front-teaser-box.png') no-repeat top left
+	
+
+.front .grid-4 table tr td:hover
+	background: transparent url('../images/front-teaser-box-active.png') no-repeat top left
+
+.front .grid-4.region-postscript-second table tr td
+	border: none
+
+.front .grid-4.region-postscript-third
+	margin: 0
+	width: 300px
+
+/* Newsbox Frontpage */
+
+.front .grid-4.region-postscript-third .view-news
+	background-color: $boxgreen
+
+.front .grid-4.region-postscript-third .view-news .group-left
+	width: 30px!important
+	display: block
+	padding: 10px
+
+.front .grid-4.region-postscript-third .view-news .group-right
+	background-color: $newsgrey
+	padding: 10px
+	width: 230px
+
+/* Promo Box */
+
+.view-frontpage-promo-box
+	height: 420px
+	padding: 15px 10px 15px 15px
+	background: #586b58 url('../images/promo-box.png') no-repeat top left
+
+.view-frontpage-promo-box .field-name-field-promo-bilder-klein div div.even img
+	margin-right: 15px
+
+/* @end Frontpage Teaser Boxen*/
+/* ------------------------------- */
 
 /* ******************************* */
 /* ## @group Projekte Übersicht >> Tabelle ## */
