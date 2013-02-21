@@ -360,6 +360,10 @@ tr.even, tr.odd
 		float: left
 		width: 56%
 
+.bautraeger-detail-2col-stacked .container1
+	background-color: $grey
+	margin-bottom: 10px
+
 .node-bautr-ger .group-left
 	width: 40%
 	margin-right: 2%
@@ -392,9 +396,18 @@ tr.even, tr.odd
 
 /* @group Team Referenz Bauträger Detail */
 
-.field-name-field-bautraeger-team-reference .node-team
-	float: left
+.bautraeger-detail-2col-stacked .group-footer .footer-wrapper
+	background-color: $boxgreen
 
+.field-name-field-bautraeger-team-reference div.field-items::after /* self-clearing http://www.ejeliot.com/samples/clearing/self-clearing.html */
+	content: "."
+	display: block
+	height: 0
+	clear: both
+	visibility: hidden
+
+.field-name-field-bautraeger-team-reference div.field-items div.field-item .node-team
+	float: left
 
 
 /* @end Team Referenz Bauträger Detail */

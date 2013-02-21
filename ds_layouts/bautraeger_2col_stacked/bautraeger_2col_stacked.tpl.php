@@ -29,6 +29,7 @@
     <div class="group-right<?php print $right_classes; ?>">
       <?php print $right; ?>
     </div>
+    <div class="clear-float">&nbsp;</div>
   <?php endif; ?>
 </div> <!-- end container1 -->
 <!-- </div> --> <!-- end container2 -->
@@ -36,7 +37,10 @@
 
   <?php if ($footer): ?>
     <div class="group-footer<?php print $footer_classes; ?>">
-      <?php print $footer; ?>
+      <div class="footer-wrapper">
+	      <?php print $footer; ?>    
+     </div> <!-- close footer wrapper -->
+     <div class="clear-float">&nbsp;</div>
     </div>
   <?php endif; ?>
 </div>

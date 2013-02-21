@@ -287,6 +287,10 @@ tr.even, tr.odd {
     float: left;
     width: 56%; }
 
+.bautraeger-detail-2col-stacked .container1 {
+  background-color: #eaeaea;
+  margin-bottom: 10px; }
+
 .node-bautr-ger .group-left {
   width: 40%;
   margin-right: 2%; }
@@ -317,7 +321,17 @@ tr.even, tr.odd {
   margin-right: 0px; }
 
 /* @group Team Referenz Bauträger Detail */
-.field-name-field-bautraeger-team-reference .node-team {
+.bautraeger-detail-2col-stacked .group-footer .footer-wrapper {
+  background-color: #718471; }
+
+.field-name-field-bautraeger-team-reference div.field-items::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.field-name-field-bautraeger-team-reference div.field-items div.field-item .node-team {
   float: left; }
 
 /* @end Team Referenz Bauträger Detail */
