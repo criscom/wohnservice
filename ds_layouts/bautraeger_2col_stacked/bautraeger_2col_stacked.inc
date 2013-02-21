@@ -7,7 +7,7 @@
 
 function ds_bautraeger_2col_stacked() {
   return array(
-    'label' => t('Bauträger 2 column stacked'),
+    'label' => t('Bautraeger 2 column stacked'),
     'regions' => array(
       'header' => t('Header'),
       'left' => t('Left'),

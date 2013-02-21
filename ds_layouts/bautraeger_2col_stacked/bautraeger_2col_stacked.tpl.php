@@ -18,7 +18,7 @@
   <?php endif; ?>
 <!-- ><div id="container3">
 <div id="container2"> -->
-<div id="container1">
+<div class="container1">
   <?php if ($left): ?>
     <div class="group-left<?php print $left_classes; ?>">
       <?php print $left; ?>
@@ -31,8 +31,8 @@
     </div>
   <?php endif; ?>
 </div> <!-- end container1 -->
-<!-- </div>  end container2 -->
- <!-- </div> end container3 -->
+<!-- </div> --> <!-- end container2 -->
+ <!-- </div> --> <!-- end container3 -->
 
   <?php if ($footer): ?>
     <div class="group-footer<?php print $footer_classes; ?>">

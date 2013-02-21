@@ -3,16 +3,13 @@
 /* This also can include ANY global SASS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 /* ******************************* */
 /* ## admin bereich ## */
-/* line 25, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .logged-in #region-branding {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 /* @end admin bereich */
 /* ------------------------------- */
 /* ******************************* */
 /* ## general declarations ## */
-/* line 34, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 body {
   background: #90a490 url("../images/body-bg-big-line.png") no-repeat top center;
   font-family: Arial, Verdana, serif;
@@ -20,156 +17,104 @@ body {
   line-height: 1.125em;
   margin: 0;
   padding: 0;
-  color: #404040;
-}
+  color: #404040; }
 
-/* line 43, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .body-wrapper {
   background: #eaeaea url("../images/body-wrapper.png") repeat-x top left;
-  height: 84px;
-}
+  height: 84px; }
 
-/* line 47, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 #zone-content {
-  margin-top: 15px;
-}
+  margin-top: 15px; }
 
-/* line 50, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 body.not-front #zone-content .region-content {
-  min-height: 750px;
-}
+  min-height: 750px; }
 
-/* line 54, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 h1, h2 {
   font-family: Arial, Verdana, serif;
   font-size: 1.125em;
-  color: #768f76;
-}
+  color: #768f76; }
 
-/* line 59, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 p, .field-content {
-  color: #404040;
-}
+  color: #404040; }
 
-/* line 62, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 h1 a, h2 a, .views-field-title a {
   text-decoration: none;
   color: #768f76;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 /* @end general declarations */
 /* ------------------------------- */
 /* ******************************* */
 /* ## @group Logo und Hauptmenü ## */
-/* line 73, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .region-menu {
-  height: 85px;
-}
+  height: 85px; }
 
-/* line 76, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .block-delta-blocks-logo {
-  float: left;
-}
+  float: left; }
 
-/* line 79, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .block-main-menu {
-  float: left;
-}
-/* line 82, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.block-main-menu .block-inner .content ul {
-  display: block;
-}
-/* line 85, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.block-main-menu .block-inner .content ul li {
-  display: inline;
-}
+  float: left; }
+  .block-main-menu .block-inner .content ul {
+    display: block; }
+    .block-main-menu .block-inner .content ul li {
+      display: inline; }
 
-/* line 88, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .section-content {
-  clear: both;
-}
+  clear: both; }
 
-/* line 91, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 tr.even, tr.odd {
   background-color: none;
-  border-bottom: none;
-}
+  border-bottom: none; }
 
 /* @end Logo und Hauptmenü */
 /* ------------------------------- */
 /* ******************************* */
 /* ## @group Frontpage News und Teaserboxen## */
-/* line 102, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .front .grid-4.region-postscript-third {
-  margin-left: 2%;
-}
+  margin-left: 2%; }
 
-/* line 105, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .front .grid-4 table tr td {
-  background: #768f76;
-}
+  background: #768f76; }
 
-/* line 113, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .front .grid-4 table tr td:hover {
-  background: #ef7900;
-}
+  background: #ef7900; }
 
-/* line 116, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .front .view-news .views-row {
-  border-bottom: 1px solid #90a490;
-}
+  border-bottom: 1px solid #90a490; }
 
 /* Schriftgrößen der Überschriften in den Teaserboxen und Newsbox auf 16 px 18*0.9==>16 */
-/* line 120, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .front .view-news h2 a {
-  font-size: 0.9em;
-}
+  font-size: 0.9em; }
 
-/* line 123, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .front .view-frontpage-teaser-boxen .views-field-title a {
-  color: white;
-}
+  color: white; }
 
-/* line 126, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .front .view-frontpage-teaser-boxen p {
-  color: #d7eed7;
-}
+  color: #d7eed7; }
 
 /* Promo Box */
-/* line 131, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .view-frontpage-promo-box {
   background-color: #718471;
-  padding: 15px 2%;
-}
+  padding: 15px 2%; }
 
-/* line 135, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .promo-title a {
   font-size: 1.15em;
-  color: white !important;
-}
+  color: white !important; }
 
-/* line 139, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .promo-content {
-  margin: 30px 0 20px 0;
-}
+  margin: 30px 0 20px 0; }
 
-/* line 143, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .view-frontpage-promo-box .field-name-field-promo-bilder-klein div div img {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
-/* line 147, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .view-frontpage-promo-box .field-name-field-promo-bilder-klein div div.even img {
   float: left;
-  margin-right: 2%;
-}
+  margin-right: 2%; }
 
 /* @end Frontpage News und Teaserboxen */
 /* ------------------------------- */
 /* ******************************* */
 /* ## @group Projekte Übersicht >> Tabelle ## */
-/* line 159, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .view-projekt-bersicht-frei-finanzierte-projekte tr td {
   background: #eaeaea;
   vertical-align: top;
@@ -177,337 +122,239 @@ tr.even, tr.odd {
   padding-left: 5px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
+  background-clip: padding-box; }
 
-/* line 172, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .view-projekt-bersicht-frei-finanzierte-projekte tr td:hover {
-  background: #ef7900;
-}
+  background: #ef7900; }
 
-/* line 176, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .view-projekt-bersicht-frei-finanzierte-projekte tr td.col-1,
 .view-projekt-bersicht-frei-finanzierte-projekte tr td.col-2 {
   border-right: 2px solid rgba(0, 0, 0, 0);
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
+  background-clip: padding-box; }
 
-/* line 182, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .view-projekt-bersicht-frei-finanzierte-projekte .views-field-title {
-  margin-bottom: 12px;
-}
+  margin-bottom: 12px; }
 
-/* line 185, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .views-field-title .field-content a {
   color: #768f76;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-/* line 189, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .views-field-field-groesse {
   margin-top: 12px;
   float: left;
-  margin-right: 80px;
-}
+  margin-right: 80px; }
 
-/* line 194, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .views-field-field-preis {
   margin-top: 12px;
-  float: left;
-}
+  float: left; }
 
 /* filter auf projekt übersichtsseite */
-/* line 199, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .zone-content .grid-3.region-sidebar-first {
   width: 23.40426%;
-  margin-right: 2.12766%;
-}
+  margin-right: 2.12766%; }
 
-/* line 203, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .zone-content .grid-9.region-content {
-  width: 74.46809%;
-}
+  width: 74.46809%; }
 
 /* @end Projekte Übersicht >> Tabelle */
 /* @group Projekte Detail */
-/* line 211, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .ds-3col-stacked-equal.node-projekte .group-header {
-  width: 100%;
-}
+  width: 100%; }
 
-/* line 214, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_projekt_projektbilder {
   float: right;
   width: 66.14583%;
-  margin-left: 1.35417%;
-}
+  margin-left: 1.35417%; }
 
-/* line 219, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_projektdetail_projektinfos {
   float: left;
-  width: 31.25%;
-}
+  width: 31.25%; }
 
-/* line 223, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_projekte_infos_links {
   float: left;
   width: 45%;
-  margin-right: 5%;
-}
+  margin-right: 5%; }
 
-/* line 229, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_projekte_infos_rechts {
   float: right;
   width: 45%;
-  margin-left: 5%;
-}
+  margin-left: 5%; }
 
-/* line 234, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_projektdetail_weitereinfos, .group_wohnungstypen {
-  clear: both;
-}
+  clear: both; }
 
-/* line 237, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .ds-3col-stacked-equal .group-left {
-  clear: both;
-}
+  clear: both; }
 
-/* line 240, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.field-wohnungstypen-bilder .field-projekt-wohnungstyp {
-  float: left;
-}
-/* line 243, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 {
-  font-size: 0.9em;
-}
-/* line 246, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 a:link, .field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 a:visited, .field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 a:hover, .field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 a:active {
-  text-decoration: none;
-}
+.field-name-wohnungstypen-bilder .field-name-field-projekt-wohnungstyp {
+  float: left; }
+  .field-name-wohnungstypen-bilder .field-name-field-projekt-wohnungstyp h3 {
+    font-size: 0.9em; }
+    .field-name-wohnungstypen-bilder .field-name-field-projekt-wohnungstyp h3 a:link, .field-name-wohnungstypen-bilder .field-name-field-projekt-wohnungstyp h3 a:visited, .field-name-wohnungstypen-bilder .field-name-field-projekt-wohnungstyp h3 a:hover, .field-name-wohnungstypen-bilder .field-name-field-projekt-wohnungstyp h3 a:active {
+      text-decoration: none; }
 
 /* @group Image Gallery in Projekte Detail */
-/* line 253, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.field-projekt-bilder-klein img {
+.field-name-field-projekt-bilder-klein img {
   float: left;
   z-index: 10;
-  margin: 3px 4px 3px 0px;
-}
+  margin: 3px 2px 3px 0px; }
 
-/* line 258, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.field-projekt-bilder-klein:nth-child(5n+5) img {
-  margin-right: 0px;
-}
+.field-name-projekt-bilder-klein:nth-child(5n+5) img {
+  margin-right: 0px; }
 
 /* @end Image Gallery */
 /* @group Stammdaten Flächendaten Technische Daten Kaufdaten */
-/* line 265, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .node-type-projekte .group-left {
-  clear: both;
-}
+  clear: both; }
 
-/* line 268, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .outer-wrapper {
   display: block;
-  clear: left;
-}
-/* line 272, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.outer-wrapper .label-inline {
-  float: left;
-}
+  clear: left; }
+  .outer-wrapper .label-inline {
+    float: left; }
 
-/* line 275, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .flaechendaten .sonstiges-field-items {
-  display: block;
-}
-/* line 278, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.flaechendaten .sonstiges-field-items div.second-column {
-  float: left;
-}
+  display: block; }
+  .flaechendaten .sonstiges-field-items div.second-column {
+    float: left; }
 
-/* line 281, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .node-projekte.view-mode-full .group-left,
 .node-projekte.view-mode-full .group-middle,
 .node-projekte.view-mode-full .group-right {
   width: 30%;
-  margin-right: 5%;
-}
+  margin-right: 5%; }
 
-/* line 287, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .node-projekte.view-mode-full .group-right {
-  margin-right: 0;
-}
+  margin-right: 0; }
 
-/* line 290, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .node-projekte.view-mode-full .group-left,
 .node-projekte.view-mode-full .group-middle,
 .node-projekte.view-mode-full .group-right > div.group_technische_daten {
-  background: #586b58 url(../images/datenbox-bg.png) repeat-x top left;
-}
+  background: #586b58 url(../images/datenbox-bg.png) repeat-x top left; }
 
-/* line 295, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .node-projekte.view-mode-full .group-right > div.group_kaufdaten {
-  background: #eaeaea url(../images/datenbox-kauf-bg.png) repeat-x top left;
-}
+  background: #eaeaea url(../images/datenbox-kauf-bg.png) repeat-x top left; }
 
 /* @end Stammdaten */
 /* @group filter */
-/* line 302, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .views-exposed-form .views-exposed-widget {
-  float: none;
-}
+  float: none; }
 
 /* @end filter */
+.field-name-field-projekt-wohnungstyp {
+  position: relative;
+  display: inline; }
+  .field-name-field-projekt-wohnungstyp .field-items .field-item {
+    float: left; }
+
 /** @end Projekte Detail ** */
 /** @group Wohnungstypen Detail ** */
-/* line 312, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_wht_teaser {
-  display: block;
-}
-/* line 315, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.group_wht_teaser .field-objektart-reloaded, .group_wht_teaser .groesse-zimmer {
-  float: left;
-}
+  display: block; }
+  .group_wht_teaser .field-objektart-reloaded, .group_wht_teaser .groesse-zimmer {
+    float: left; }
 
-/* line 318, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_objekt_objektbilder {
   float: right;
   width: 66.14583%;
-  margin-left: 1.35417%;
-}
+  margin-left: 1.35417%; }
 
-/* line 323, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_objektdetail_objektinfos {
   float: left;
-  width: 31.25%;
-}
+  width: 31.25%; }
 
-/* line 327, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_wohnungstypen_stammdaten {
-  clear: both;
-}
+  clear: both; }
 
-/* line 330, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .field-wohnungstyp-bilder-klein img {
   float: left;
   z-index: 10;
-  margin: 3px 4px 3px 0px;
-}
+  margin: 3px 4px 3px 0px; }
 
-/* line 335, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .field-wohnungstyp-bilder-klein:nth-child(5n+5) img {
-  margin-right: 0px;
-}
+  margin-right: 0px; }
 
 /** @end Wohnungstypen Detail ** */
 /*@group Bauträger Detail */
-/* line 342, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_bautraeger_logo_data {
-  display: block;
-}
-/* line 345, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.group_bautraeger_logo_data .field-bautraeger-logo {
-  float: left;
-  margin-right: 2%;
-  width: 42%;
-}
-/* line 351, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.group_bautraeger_logo_data .field-bautraeger-daten {
-  float: left;
-  width: 56%;
-}
+  display: block; }
+  .group_bautraeger_logo_data .field-bautraeger-logo {
+    float: left;
+    margin-right: 2%;
+    width: 42%; }
+  .group_bautraeger_logo_data .field-bautraeger-daten {
+    float: left;
+    width: 56%; }
 
-/* line 355, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.aktuelle-projekte-field-item, .weitere-projekte-field {
-  float: left;
-}
+.node-bautr-ger .group-left {
+  width: 40%;
+  margin-right: 2%; }
 
-/* line 358, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
+.node-bautr-ger .group-right {
+  width: 58%; }
+
+.outer-wrapper-aktuelle-projekte .aktuelle-projekte-field-item, .weitere-projekte-field {
+  float: left !important; }
+
 .aktuelle-projekte-field-item.even {
-  margin-right: 9px;
-}
+  margin-right: 1%; }
 
-/* line 361, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .view-mode-bautraeger_weitere h3 {
   font-size: 0.9em;
-  margin: 10px 0;
-}
-/* line 365, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.view-mode-bautraeger_weitere h3 a:link, .view-mode-bautraeger_weitere h3 a:visited, .view-mode-bautraeger_weitere h3 a:hover, .view-mode-bautraeger_weitere h3 a:active {
-  text-decoration: none;
-}
+  margin: 10px 0; }
+  .view-mode-bautraeger_weitere h3 a:link, .view-mode-bautraeger_weitere h3 a:visited, .view-mode-bautraeger_weitere h3 a:hover, .view-mode-bautraeger_weitere h3 a:active {
+    text-decoration: none; }
 
 /* @Bauträger Stellt sicher, dass die Überschrift "Weitere Projekte" im iPad unter den Bildern von Aktuelle Projekte steht */
-/* line 369, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.field-weitere-projekte {
-  clear: both;
-}
+.field-name-field-weitere-projekte {
+  clear: both; }
 
-/* line 372, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .weitere-projekte-field {
-  margin-right: 8px;
-}
+  margin-right: 1%; }
 
-/* line 375, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .weitere-projekte-field:nth-child(3n+4) {
-  margin-right: 0px;
-}
+  margin-right: 0px; }
 
 /* @group Team Referenz Bauträger Detail */
-/* line 380, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.field-bautraeger-team-reference .node-team {
-  float: left;
-}
+.field-name-field-bautraeger-team-reference .node-team {
+  float: left; }
 
 /* @end Team Referenz Bauträger Detail */
 /** @end Bauträger Detail ** */
 /* ------------------------------- */
 /* ******************************* */
 /* ## @group News ## */
-/* @end News */
-/* ------------------------------- */
-/* line 398, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.node-news .field-image {
+.node-news .field-name-field-image {
   float: left;
-  margin-right: 2%;
-}
+  margin-right: 2%; }
 
-/* line 402, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
-.group_news_header .field-title {
-  float: left;
-}
+.group_news_header .field-name-title {
+  float: left; }
 
-/* line 405, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_news_header .beitragsdatum {
   float: right;
   color: #768f76;
-  font-size: 0.625em;
-}
+  font-size: 0.625em; }
 
-/* line 410, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .group_news_inhalt {
-  clear: both;
-}
+  clear: both; }
 
+/* @end News */
+/* ------------------------------- */
 /* ******************************* */
 /* ## @group Footer ## */
-/* line 416, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 #section-footer .zone-footer-wrapper {
   background-image: url("../images/footer-strip.png");
   background-repeat: repeat-x;
   background-position: bottom center;
-  height: 270px;
-}
+  height: 270px; }
 
-/* line 422, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 .footer-middle-left.google {
-  float: left;
-}
+  float: left; }
 
 /* @end Footer */
 /* Loading Allgemeines Kontaktformular in a Colorbox */
-/* line 430, /Users/cpotzinger/Sites/wohnservice/wohnservice/sass/global.sass */
 #colorbox article.node-webform {
   background-color: white;
-  padding: 20px;
-}
+  padding: 20px; }
