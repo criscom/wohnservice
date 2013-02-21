@@ -1,0 +1,193 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+
+
+$green: #768f76 // Farbe ==> grün für Überschriften wie Gasse und Bezirk
+$boxgreen: #718471
+$bodygreen: #90a490
+$box: #586b58 // Hintergrundfarbe ==> grün der Stammdaten Flächendaten etc Boxen; Boxen haben Verläufe als Hintergrund, dieses Grün wurde vom untersten Ende der Box gemessen 
+$grey: #eaeaea // Hintergrundfarbe ==> grau vom Footer
+$newsgrey: #eeeeee
+$fontgrey: #404040
+$mainfont: Arial, Verdana, serif // Main Font for the Site, old and boring ;)
+$lhmain: 1.125em // Specifies the main line height for the site, which is 18px; 16*1.125=18
+$size18: 1.125em // Schriftgröße 18 px für Title und Header ==> Bauträger Übersicht; Projekt Detail; Stammdaten Überschrift; 16*1.125=18
+$size14: 0.875em // Schriftgröße für den Standardtext als auch für die Titel/Header in der Projektübersicht; 16*0.875=14
+$size12: 0.75em  // Schriftgröße 12px
+$size10: 0.625em // Schriftgröße 10px
+
+
+.front .container-12 .grid-3
+	width: 220px
+
+
+/* ******************************* */
+/* ## @group Flexislider Frontpage ## */
+
+.flexslider,
+.flex-nav-container
+	width: 695px!important
+
+/* @end Flexislider Frontpage */
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## @group Frontpage Teaser Boxen ## */
+
+
+.front .container-12 .grid-4.region-postscript-first,
+.front .container-12 .grid-4.region-postscript-second
+	width: 300px
+	margin-right: 20px
+
+.front .container-12 .grid-4.region-postscript-third
+	width: 300px
+
+.front .grid-4.region-postscript-first,
+.front .container-12 .grid-4.region-postscript-second
+	margin-left: 0px
+	
+
+.front .grid-4.region-postscript-third
+	margin-right: 0px
+	
+
+.front .grid-4 table tr td
+
+//	width: 300px !important
+	vertical-align: top
+//	padding-top: 15px
+//	padding-left: 5px
+
+.front .grid-4.region-postscript-first table tr td,
+.front .grid-4.region-postscript-second	table tr td
+	vertical-align: top
+	height: 225px
+	background: url('../images/front-teaser-box.png') no-repeat top left
+	
+
+.front .grid-4 table tr td:hover
+	background: transparent url('../images/front-teaser-box-active.png') no-repeat top left
+
+.front .grid-4.region-postscript-second table tr td
+	border: none
+
+.front .grid-4.region-postscript-third
+	margin: 0
+	width: 300px
+
+/* Newsbox Frontpage */
+
+.front .grid-4.region-postscript-third .view-news
+	background-color: $boxgreen
+
+.front .grid-4.region-postscript-third .view-news .group-left
+	width: 30px!important
+	display: block
+	padding: 10px
+
+.front .grid-4.region-postscript-third .view-news .group-right
+	background-color: $newsgrey
+	padding: 10px
+	width: 230px
+
+/* Promo Box */
+
+.view-frontpage-promo-box
+	height: 420px
+	padding: 15px 10px 15px 15px
+	background: #586b58 url('../images/promo-box.png') no-repeat top left
+
+.view-frontpage-promo-box .field-name-field-promo-bilder-klein div div.even img
+	margin-right: 15px
+
+/* @end Frontpage Teaser Boxen*/
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## @group Projekte Übersicht >> Tabelle ## */
+
+.view-projekt-bersicht-frei-finanzierte-projekte tr td
+	width: 220px !important
+	height: 213px
+	background: transparent url('../images/projekt-detail-bg.png') no-repeat top left
+	vertical-align: top
+	padding-top: 15px
+	padding-left: 5px
+
+// tr:hover td,
+// tr.even:hover td.active,
+// tr.odd:hover td.active,
+.view-projekt-bersicht-frei-finanzierte-projekte tr td:hover
+
+	background: transparent url('../images/projekt-detail-bg-aktiv.png') no-repeat top left
+	width: 220px !important
+	height: 213px
+	
+/* filter auf projekt übersichtsseite */
+.zone-content .grid-3.region-sidebar-first
+	width: 220px /* 940px / 220px */
+	margin-right: 20px  /* 940px / 20 px */
+
+.zone-content .grid-9.region-content
+	width: 690px /* 940 px / 700 px */
+	
+/* @end Projekte Übersicht >> Tabelle ## */
+
+/* @group Projekte Detail */
+
+.ds-3col-stacked-equal.node-projekte .group-header
+	width: 940px
+
+.group_projekt_projektbilder /* Großes Bild rechts vom Titel */
+	float: right
+	width: 635px /* 940px / 635px */
+	margin-left: 13px /* 940 px / 13 px */
+
+.group_projektdetail_projektinfos /* Info-Block unterhalb des Titels */
+	float: left
+	width: 292px /* 940px / 300px */
+	
+.group_projekte_infos_links
+	float: left
+	width: 45%
+	margin-right: 5%
+	
+	
+/* @group Image Gallery in Projekte Detail */
+
+.field-projekt-bilder-klein img
+	float: left
+	z-index: 10
+	margin: 3px 3px 3px 0px /* 635 px / 12 px / 1.88976378% */
+
+	
+/* @end Image Gallery */
+	
+/* @group Stammdaten Flächendaten Technische Daten Kaufdaten */
+
+
+.node-projekte.view-mode-full .group-left,
+.node-projekte.view-mode-full .group-middle,
+.node-projekte.view-mode-full .group-right
+	width: 300px
+	margin-right: 20px
+
+.node-projekte.view-mode-full .group-right
+	margin-right: 0
+
+
+	
+/* @end Stammdaten */
+
+/* @group filter */
+
+.views-exposed-form .views-exposed-widget
+	float: none
+
+/* @end filter */
+
+
+/*** @end Projekte Detail ***/

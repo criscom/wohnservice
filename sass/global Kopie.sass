@@ -1,0 +1,430 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global SASS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+$green: #768f76 // Farbe ==> grün für Überschriften wie Gasse und Bezirk
+$bodygreen: #90a490
+$boxgreen: #718471
+$boxfontgreen: #d7eed7
+$titlewhite: #ffffff
+$box: #586b58 // Hintergrundfarbe ==> grün der Stammdaten Flächendaten etc Boxen; Boxen haben Verläufe als Hintergrund, dieses Grün wurde vom untersten Ende der Box gemessen 
+$grey: #eaeaea // Hintergrundfarbe ==> grau vom Footer
+$orange: #ef7900 // Orange vom Dreieck genommen
+$fontgrey: #404040
+$mainfont: Arial, Verdana, serif // Main Font for the Site, old and boring ;)
+$lhmain: 1.125em // Specifies the main line height for the site, which is 18px; 16*1.125=18
+$size18: 1.125em // Schriftgröße 18 px für Title und Header ==> Bauträger Übersicht; Projekt Detail; Stammdaten Überschrift; 16*1.125=18
+$size14: 0.875em // Schriftgröße für den Standardtext als auch für die Titel/Header in der Projektübersicht; 16*0.875=14
+$size12: 0.75em  // Schriftgröße 12px
+$size10: 0.625em // Schriftgröße 10px
+
+/* ******************************* */
+/* ## admin bereich ## */
+
+.logged-in #region-branding
+	margin-top: 20px
+	
+/* @end admin bereich */
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## general declarations ## */
+
+body
+	background: $bodygreen url('../images/body-bg-big-line.png') no-repeat top center
+	font-family: $mainfont
+	font-size: 100%
+	line-height: $lhmain
+	margin: 0
+	padding: 0
+	color: $fontgrey
+
+.body-wrapper
+	background: $grey url('../images/body-wrapper.png') repeat-x top left
+	height: 84px
+
+#zone-content
+	margin-top: 15px
+
+body.not-front #zone-content .region-content // Main content area; here we set the min height to the green "window" of the background in case the actual content area is smaller so that the footer stays in the gray area
+	min-height: 750px
+//	min-height: 100%
+
+h1, h2
+	font-family: $mainfont
+	font-size: $size18
+	color: $green
+	
+p, .field-content
+	color: $fontgrey
+
+h1 a, h2 a, .views-field-title a
+	text-decoration: none
+	color: $green
+	font-weight: normal
+
+/* @end general declarations */
+/* ------------------------------- */
+	
+/* ******************************* */
+/* ## @group Logo und Hauptmenü ## */
+
+.region-menu
+	height: 85px
+
+.block-delta-blocks-logo
+	float: left
+	
+.block-main-menu
+	float: left
+	
+	.block-inner .content ul
+		display: block
+		
+		li
+			display: inline	
+				
+.section-content
+	clear: both
+	
+tr.even, tr.odd
+	background-color: none
+	border-bottom: none
+
+/* @end Logo und Hauptmenü */
+/* ------------------------------- */
+
+
+/* ******************************* */
+/* ## @group Frontpage News und Teaserboxen## */
+
+.front .grid-4.region-postscript-third
+	margin-left: 2%
+
+.front .grid-4 table tr td
+	background: $green
+
+//.front .grid-4.region-postscript-second table tr td
+//	border-left: 3px solid rgba(0, 0, 0, .0)
+//	-webkit-background-clip: padding-box /* for Safari */
+//	background-clip: padding-box /* for IE9+, Firefox 4+, Opera, Chrome */
+		
+.front .grid-4 table tr td:hover
+	background: $orange
+
+.front .view-news .views-row
+	border-bottom: 1px solid $bodygreen
+
+/* Schriftgrößen der Überschriften in den Teaserboxen und Newsbox auf 16 px 18*0.9==>16*/
+.front .view-news h2 a
+	font-size: 0.9em
+
+.front .view-frontpage-teaser-boxen .views-field-title a
+	color: $titlewhite
+
+.front .view-frontpage-teaser-boxen p
+	color: $boxfontgreen
+	
+/* Promo Box */
+
+.view-frontpage-promo-box
+	background-color: $boxgreen
+	padding: 15px 2%
+	
+.promo-title a
+	font-size: 1.15em
+	color: $titlewhite!important
+
+.promo-content
+	margin: 30px 0 20px 0
+	
+
+.view-frontpage-promo-box .field-name-field-promo-bilder-klein div div img
+	margin-top: 10px
+
+
+.view-frontpage-promo-box .field-name-field-promo-bilder-klein div div.even img
+	float: left
+	margin-right: 2%
+
+
+
+/* @end Frontpage News und Teaserboxen*/
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## @group Projekte Übersicht >> Tabelle ## */
+
+.view-projekt-bersicht-frei-finanzierte-projekte tr td
+
+	background: $grey
+	vertical-align: top
+	padding-top: 15px
+	padding-left: 5px
+	border-bottom: 2px solid rgba(0, 0, 0, .0)
+	-webkit-background-clip: padding-box /* for Safari */
+	background-clip: padding-box /* for IE9+, Firefox 4+, Opera, Chrome */
+
+// tr:hover td,
+// tr.even:hover td.active,
+// tr.odd:hover td.active,
+.view-projekt-bersicht-frei-finanzierte-projekte tr td:hover
+
+	background: $orange
+
+.view-projekt-bersicht-frei-finanzierte-projekte tr td.col-1,
+.view-projekt-bersicht-frei-finanzierte-projekte tr td.col-2
+	border-right: 2px solid rgba(0, 0, 0, .0)
+	-webkit-background-clip: padding-box /* for Safari */
+	background-clip: padding-box /* for IE9+, Firefox 4+, Opera, Chrome */
+
+.view-projekt-bersicht-frei-finanzierte-projekte .views-field-title
+	margin-bottom: 12px
+
+.views-field-title .field-content a
+	color: $green
+	text-decoration: none
+
+.views-field-field-groesse
+	margin-top: 12px
+	float: left
+	margin-right: 80px
+	
+.views-field-field-preis
+	margin-top: 12px
+	float: left
+	
+/* filter auf projekt übersichtsseite */
+.zone-content .grid-3.region-sidebar-first
+	width: 23.4042553% /* 940px / 220px */
+	margin-right: 2.1276595%  /* 940px / 20 px */
+
+.zone-content .grid-9.region-content
+	width: 74.46808511% /* 940 px / 700 px */
+	
+/* @end Projekte Übersicht >> Tabelle */
+
+
+/* @group Projekte Detail */
+
+.ds-3col-stacked-equal.node-projekte .group-header
+	width: 100%
+
+.group_projekt_projektbilder /* Großes Bild rechts vom Titel */
+	float: right
+	width: 66.1458333% /* 960px / 635px */
+	margin-left: 1.354166667% /* 960 px / 13 px */
+
+.group_projektdetail_projektinfos /* Info-Block unterhalb des Titels */
+	float: left
+	width: 31.25% /* 960px / 300px */
+	
+.group_projekte_infos_links
+	float: left
+	width: 45%
+	margin-right: 5%
+	
+	
+.group_projekte_infos_rechts
+	float: right
+	width: 45%
+	margin-left: 5%
+	
+.group_projektdetail_weitereinfos, .group_wohnungstypen
+	clear: both
+	
+.ds-3col-stacked-equal .group-left
+	clear: both
+
+.field-wohnungstypen-bilder .field-projekt-wohnungstyp
+	float: left
+	
+	h3
+		font-size: 0.9em
+		
+		a:link, a:visited, a:hover, a:active
+			text-decoration: none 
+//.field-projekt-wohnungstyp .node-wohnungstype
+//	float: left
+
+/* @group Image Gallery in Projekte Detail */
+
+.field-projekt-bilder-klein img
+	float: left
+	z-index: 10
+	margin: 3px 4px 3px 0px /* 635 px / 12 px / 1.88976378% */
+
+.field-projekt-bilder-klein:nth-child(5n+5) img
+	margin-right: 0px
+	
+/* @end Image Gallery */
+	
+/* @group Stammdaten Flächendaten Technische Daten Kaufdaten */
+
+.node-type-projekte .group-left
+	clear: both
+
+.outer-wrapper
+	display: block
+	clear: left
+
+	.label-inline
+		float: left
+
+.flaechendaten .sonstiges-field-items
+	display: block
+
+	div.second-column
+		float: left
+
+.node-projekte.view-mode-full .group-left,
+.node-projekte.view-mode-full .group-middle,
+.node-projekte.view-mode-full .group-right
+	width: 30%
+	margin-right: 5%
+
+.node-projekte.view-mode-full .group-right
+	margin-right: 0
+
+.node-projekte.view-mode-full .group-left,
+.node-projekte.view-mode-full .group-middle,
+.node-projekte.view-mode-full .group-right>div.group_technische_daten
+	background: $box url(../images/datenbox-bg.png) repeat-x top left
+
+.node-projekte.view-mode-full .group-right>div.group_kaufdaten
+	background: $grey url(../images/datenbox-kauf-bg.png) repeat-x top left	
+	
+/* @end Stammdaten */
+
+/* @group filter */
+
+.views-exposed-form .views-exposed-widget
+	float: none
+
+/* @end filter */
+
+
+/*** @end Projekte Detail ***/
+
+/*** @group Wohnungstypen Detail ***/
+
+.group_wht_teaser
+	display: block
+	
+	.field-objektart-reloaded, .groesse-zimmer
+		float: left
+		
+.group_objekt_objektbilder/* Großes Bild rechts vom Titel */
+	float: right
+	width: 66.1458333% /* 960px / 635px */
+	margin-left: 1.354166667% /* 960 px / 13 px */
+
+.group_objektdetail_objektinfos /* Info-Block unterhalb des Titels */
+	float: left
+	width: 31.25% /* 960px / 300px */
+	
+.group_wohnungstypen_stammdaten
+	clear: both
+	
+.field-wohnungstyp-bilder-klein img
+	float: left
+	z-index: 10
+	margin: 3px 4px 3px 0px /* 635 px / 12 px / 1.88976378% */
+
+.field-wohnungstyp-bilder-klein:nth-child(5n+5) img
+	margin-right: 0px
+
+/*** @end Wohnungstypen Detail ***/
+
+/** @group Bauträger Detail **/
+
+.group_bautraeger_logo_data
+	display: block
+	
+	.field-bautraeger-logo
+		float: left
+		margin-right: 2%
+		width: 42%
+
+	
+	.field-bautraeger-daten
+		float: left
+		width: 56%
+
+.aktuelle-projekte-field-item, .weitere-projekte-field
+	float: left
+
+.aktuelle-projekte-field-item.even /* Margin zwischen den Aktuelle Projekte Bildern auf der Bauträger Detail ==> gehört eher ins narrow.css */
+	margin-right: 9px
+	
+.view-mode-bautraeger_weitere h3 /* Überschriften unter Weitere Projekte auf der Bauträger Detailseite */
+	font-size: 0.9em
+	margin: 10px 0 
+	
+	a:link, a:visited, a:hover, a:active
+		text-decoration: none
+
+/* @Bauträger Stellt sicher, dass die Überschrift "Weitere Projekte" im iPad unter den Bildern von Aktuelle Projekte steht */
+.field-weitere-projekte	
+	clear: both
+
+.weitere-projekte-field
+	margin-right: 8px
+
+.weitere-projekte-field:nth-child(3n+4)
+	margin-right: 0px
+
+/* @group Team Referenz Bauträger Detail */
+
+.field-bautraeger-team-reference .node-team
+	float: left
+
+
+
+/* @end Team Referenz Bauträger Detail */
+		
+/*** @end Bauträger Detail ***/
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## @group News ## */
+
+
+
+/* @end News */
+/* ------------------------------- */
+
+.node-news .field-image
+	float: left
+	margin-right: 2%
+
+.group_news_header .field-title
+	float: left
+
+.group_news_header .beitragsdatum
+	float: right
+	color: $green
+	font-size: $size10
+
+.group_news_inhalt
+	clear: both
+
+/* ******************************* */
+/* ## @group Footer ## */
+
+#section-footer .zone-footer-wrapper
+	background-image: url('../images/footer-strip.png')
+	background-repeat: repeat-x
+	background-position: bottom center
+	height: 270px
+	
+.footer-middle-left.google
+	float: left
+
+
+/* @end Footer */
+
+/* Loading Allgemeines Kontaktformular in a Colorbox */
+
+#colorbox article.node-webform
+	background-color: white
+	padding: 20px
