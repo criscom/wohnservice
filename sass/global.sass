@@ -237,7 +237,7 @@ tr.even, tr.odd
 .ds-3col-stacked-equal .group-left
 	clear: both
 
-.field-wohnungstypen-bilder .field-projekt-wohnungstyp
+.field-name-wohnungstypen-bilder .field-name-field-projekt-wohnungstyp
 	float: left
 	
 	h3
@@ -250,12 +250,12 @@ tr.even, tr.odd
 
 /* @group Image Gallery in Projekte Detail */
 
-.field-projekt-bilder-klein img
+.field-name-field-projekt-bilder-klein img
 	float: left
 	z-index: 10
-	margin: 3px 4px 3px 0px /* 635 px / 12 px / 1.88976378% */
+	margin: 3px 2px 3px 0px /* 635 px / 12 px / 1.88976378% */
 
-.field-projekt-bilder-klein:nth-child(5n+5) img
+.field-name-projekt-bilder-klein:nth-child(5n+5) img
 	margin-right: 0px
 	
 /* @end Image Gallery */
@@ -304,6 +304,14 @@ tr.even, tr.odd
 
 /* @end filter */
 
+.field-name-field-projekt-wohnungstyp
+	position: relative
+	display: inline
+	
+	.field-items .field-item
+		float: left
+		
+		.node-wohnungstype
 
 /*** @end Projekte Detail ***/
 
@@ -352,11 +360,24 @@ tr.even, tr.odd
 		float: left
 		width: 56%
 
-.aktuelle-projekte-field-item, .weitere-projekte-field
-	float: left
+.bautraeger-detail-2col-stacked #container1
+	background-color: $grey
+	height: 100%
+
+.node-bautr-ger .group-left
+	width: 40%
+	margin-right: 2%
+	background-color: $grey
+
+.node-bautr-ger .group-right
+	width: 58%
+	height: 100%
+
+.outer-wrapper-aktuelle-projekte .aktuelle-projekte-field-item, .weitere-projekte-field
+	float: left !important
 
 .aktuelle-projekte-field-item.even /* Margin zwischen den Aktuelle Projekte Bildern auf der Bauträger Detail ==> gehört eher ins narrow.css */
-	margin-right: 9px
+	margin-right: 1%
 	
 .view-mode-bautraeger_weitere h3 /* Überschriften unter Weitere Projekte auf der Bauträger Detailseite */
 	font-size: 0.9em
@@ -366,18 +387,18 @@ tr.even, tr.odd
 		text-decoration: none
 
 /* @Bauträger Stellt sicher, dass die Überschrift "Weitere Projekte" im iPad unter den Bildern von Aktuelle Projekte steht */
-.field-weitere-projekte	
+.field-name-field-weitere-projekte	
 	clear: both
 
 .weitere-projekte-field
-	margin-right: 8px
+	margin-right: 1%
 
 .weitere-projekte-field:nth-child(3n+4)
 	margin-right: 0px
 
 /* @group Team Referenz Bauträger Detail */
 
-.field-bautraeger-team-reference .node-team
+.field-name-field-bautraeger-team-reference .node-team
 	float: left
 
 
@@ -391,15 +412,11 @@ tr.even, tr.odd
 /* ## @group News ## */
 
 
-
-/* @end News */
-/* ------------------------------- */
-
-.node-news .field-image
+.node-news .field-name-field-image
 	float: left
 	margin-right: 2%
 
-.group_news_header .field-title
+.group_news_header .field-name-title
 	float: left
 
 .group_news_header .beitragsdatum
@@ -409,6 +426,9 @@ tr.even, tr.odd
 
 .group_news_inhalt
 	clear: both
+
+/* @end News */
+/* ------------------------------- */
 
 /* ******************************* */
 /* ## @group Footer ## */
