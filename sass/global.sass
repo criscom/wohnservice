@@ -360,9 +360,20 @@ tr.even, tr.odd
 		float: left
 		width: 56%
 
+//.bautraeger-detail-2col-stacked::after/* self-clearing http://www.ejeliot.com/samples/clearing/self-clearing.html */
+//	content: "."
+//	display: block
+//	height: 0
+//	clear: both
+//	visibility: hidden
+
+
 .bautraeger-detail-2col-stacked .container1
 	background-color: $grey
 	margin-bottom: 10px
+	
+	div.clear-float
+		clear: left
 
 .node-bautr-ger .group-left
 	width: 40%
