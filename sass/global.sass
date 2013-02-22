@@ -65,6 +65,7 @@ h1, h2, h3
 	
 p, .field-content
 	color: $fontgrey
+	font-size: $size14
 
 h1 a, h2 a, .views-field-title a
 	text-decoration: none
@@ -357,17 +358,27 @@ tr.even, tr.odd
 /** @group Bauträger Detail **/
 
 .group_bautraeger_logo_data
-	display: block
+	overflow: auto
+	margin-bottom: 10px
 	
-	.field-bautraeger-logo
+	.field-name-field-bautraeger-logo
 		float: left
 		margin-right: 2%
 		width: 42%
 
 	
-	.field-bautraeger-daten
-		float: left
+	.field-name-field-bautraeger-daten
+		float: right
 		width: 56%
+
+.group_bautraeger_info 
+	clear: both
+		
+.node-bautr-ger .field-name-body
+
+	background: url("../images/title-bg.png") repeat-x left top
+	padding: 10px 0 0 0
+	margin: 10px 0 0 0
 
 //.bautraeger-detail-2col-stacked::after/* self-clearing http://www.ejeliot.com/samples/clearing/self-clearing.html */
 //	content: "."
@@ -384,6 +395,8 @@ tr.even, tr.odd
 	
 	div.clear-float
 		clear: left
+
+
 
 .node-bautr-ger .group-left
 	width: 40%
