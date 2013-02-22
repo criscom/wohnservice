@@ -3,6 +3,8 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global SASS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
+@import dominik.css
+
 $green: #768f76 // Farbe ==> grün für Überschriften wie Gasse und Bezirk
 $bodygreen: #90a490
 $boxgreen: #718471
@@ -51,13 +53,14 @@ body.not-front #zone-content .region-content // Main content area; here we set t
 	min-height: 750px
 //	min-height: 100%
 
-h1, h2
+h1, h2, h3
 	font-family: $mainfont
 	font-size: $size18
 	color: $green
 	font-weight: normal
 	background: url(../images/title-bg.png) repeat-x left bottom
 	padding-bottom: 10px
+	margin-bottom: 10px
 	
 	
 p, .field-content
