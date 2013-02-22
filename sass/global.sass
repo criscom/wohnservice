@@ -452,7 +452,7 @@ tr.even, tr.odd
 
 /* @group Team Referenz Bauträger Detail */
 
-.bautraeger-detail-2col-stacked .group-footer .footer-wrapper
+.bautraeger-detail-2col-stacked .group-footer .footer-wrapper /* Bauträger Detail */
 	background-color: $boxgreen
 
 // .field-name-field-bautraeger-team-reference div.field-items::after /* self-clearing http://www.ejeliot.com/samples/clearing/self-clearing.html */
@@ -461,6 +461,9 @@ tr.even, tr.odd
 //	height: 0
 //	clear: both
 //	visibility: hidden
+
+.field-name-field-bautraeger-team-reference div.field-items div.field-item .node-team /* Bauträger Detail */
+	float: left
 
 .group-footer .footer-wrapper 
 	padding: 10px
@@ -518,10 +521,6 @@ tr.even, tr.odd
 				div.field-name-field-team-telefon, div.field-name-field-team-email
 					color: white
 					font-size: .85em
-	
-
-.field-name-field-bautraeger-team-reference div.field-items div.field-item .node-team
-	float: left
 
 
 /* @end Team Referenz Bauträger Detail */
@@ -549,6 +548,20 @@ tr.even, tr.odd
 	clear: both
 
 /* @end News */
+/* ------------------------------- */
+
+/* ******************************* */
+/** @group Beratung **/
+
+body.node-type-beratung .group-footer .field-name-field-bautraeger-team-reference /* Beratung */
+	background-color: $boxgreen
+	overflow: auto
+	
+body.node-type-beratung .group-footer .field-name-field-bautraeger-team-reference div.node-team
+	float: left
+
+
+/** @end Beratung **/
 /* ------------------------------- */
 
 /* ******************************* */
