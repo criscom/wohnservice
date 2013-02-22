@@ -1,5 +1,3 @@
-/* Stylsheet für Desktop browser 960 px Grid bzw 940 px Grid mit 10 px margin left/right */
-
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
@@ -160,7 +158,7 @@ $size10: 0.625em // Schriftgröße 10px
 	
 /* @group Image Gallery in Projekte Detail */
 
-.ffield-name-field-projekt-bilder-klein img
+.field-projekt-bilder-klein img
 	float: left
 	z-index: 10
 	margin: 3px 3px 3px 0px /* 635 px / 12 px / 1.88976378% */
@@ -193,64 +191,3 @@ $size10: 0.625em // Schriftgröße 10px
 
 
 /*** @end Projekte Detail ***/
-
-/** @group Bauträger Detail **/
-
-.group_bautraeger_logo_data
-	display: block
-	
-	.field-name-field-bautraeger-logo
-		float: left
-		margin-right: 5px
-		width: 125px
-
-	
-	.field-name-field-bautraeger-daten
-		float: left
-		width: 245px
-
-body.node-type-bautr-ger .node-bautr-ger .group-left
-	width: 375px
-	margin-right: 15px
-
-body.node-type-bautr-ger .node-bautr-ger .group-right
-	width: 550px
-	margin-left: 0px
-
-.outer-wrapper-aktuelle-projekte .aktuelle-projekte-field-item, .weitere-projekte-field
-	float: left !important
-
-.aktuelle-projekte-field-item.even /* Margin zwischen den Aktuelle Projekte Bildern auf der Bauträger Detail ==> gehört eher ins narrow.css */
-	margin-right: 2px
-	
-.view-mode-bautraeger_weitere h3 /* Überschriften unter Weitere Projekte auf der Bauträger Detailseite */
-	font-size: 0.9em
-	margin: 10px 0 
-	
-	a:link, a:visited, a:hover, a:active
-		text-decoration: none
-
-/* @Bauträger Stellt sicher, dass die Überschrift "Weitere Projekte" im iPad unter den Bildern von Aktuelle Projekte steht */
-.field-name-field-weitere-projekte	
-	clear: both
-
-.weitere-projekte-field
-	margin-right: 2px
-	h3
-		font-size: $size12
-	
-	
-.weitere-projekte-field:nth-child(3n+4)
-	margin-right: 0px
-
-/* @group Team Referenz Bauträger Detail */
-
-.field-name-field-bautraeger-team-reference .node-team
-	float: left
-
-
-
-/* @end Team Referenz Bauträger Detail */
-		
-/*** @end Bauträger Detail ***/
-/* ------------------------------- */

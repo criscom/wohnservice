@@ -1,26 +1,27 @@
+/* Stylesheet für iPad spezifische Stylings */
 /* .front .grid-4.region-postscript-second tr td
  * border-right: 10px solid rgba(0, 0, 0, .0)
  * border-left: 10px solid rgba(0, 0, 0, .0)
  * -webkit-background-clip: padding-box /* for Safari */
 /*	background-clip: padding-box /* for IE9+, Firefox 4+, Opera, Chrome */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal-7\.17\/sites\/default\/themes\/wohnservice\/sass\/wohnservice-alpha-default-narrow\.sass}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal-7\.17\/sites\/default\/themes\/wohnservice\/sass\/wohnservice-alpha-default-narrow\.sass}line{font-family:\000039}}
 .front .container-12 .grid-4.region-postscript-first,
 .front .container-12 .grid-4.region-postscript-second {
   width: 260px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal-7\.17\/sites\/default\/themes\/wohnservice\/sass\/wohnservice-alpha-default-narrow\.sass}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal-7\.17\/sites\/default\/themes\/wohnservice\/sass\/wohnservice-alpha-default-narrow\.sass}line{font-family:\0000313}}
 .flexslider,
 .flex-nav-container {
   width: 550px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal-7\.17\/sites\/default\/themes\/wohnservice\/sass\/wohnservice-alpha-default-narrow\.sass}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal-7\.17\/sites\/default\/themes\/wohnservice\/sass\/wohnservice-alpha-default-narrow\.sass}line{font-family:\0000317}}
 .front .container-12 .grid-3 {
   width: 555px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal-7\.17\/sites\/default\/themes\/wohnservice\/sass\/wohnservice-alpha-default-narrow\.sass}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/drupal-7\.17\/sites\/default\/themes\/wohnservice\/sass\/wohnservice-alpha-default-narrow\.sass}line{font-family:\0000320}}
 .view-frontpage-promo-box {
   height: 100%;
   margin-bottom: 10px;

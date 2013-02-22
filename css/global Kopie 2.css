@@ -1,0 +1,353 @@
+/* Stylsheet für globale Styles und für iPhone etc */
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global SASS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/* ******************************* */
+/* ## admin bereich ## */
+.logged-in #region-branding {
+  margin-top: 20px; }
+
+/* @end admin bereich */
+/* ------------------------------- */
+/* ******************************* */
+/* ## general declarations ## */
+body {
+  background: #90a490 url("../images/body-bg-big-line.png") no-repeat top center;
+  font-family: Arial, Verdana, serif;
+  font-size: 100%;
+  line-height: 1.125em;
+  margin: 0;
+  padding: 0;
+  color: #404040; }
+
+.body-wrapper {
+  background: #eaeaea url("../images/body-wrapper.png") repeat-x top left;
+  height: 84px; }
+
+#zone-content {
+  margin-top: 15px; }
+
+body.not-front #zone-content .region-content {
+  min-height: 750px; }
+
+h1, h2 {
+  font-family: Arial, Verdana, serif;
+  font-size: 1.125em;
+  color: #768f76; }
+
+p, .field-content {
+  color: #404040; }
+
+h1 a, h2 a, .views-field-title a {
+  text-decoration: none;
+  color: #768f76;
+  font-weight: normal; }
+
+/* @end general declarations */
+/* ------------------------------- */
+/* ******************************* */
+/* ## @group Logo und Hauptmenü ## */
+.region-menu {
+  height: 85px; }
+
+.block-delta-blocks-logo {
+  float: left; }
+
+.block-main-menu {
+  float: left; }
+  .block-main-menu .block-inner .content ul {
+    display: block; }
+    .block-main-menu .block-inner .content ul li {
+      display: inline; }
+
+.section-content {
+  clear: both; }
+
+tr.even, tr.odd {
+  background-color: none;
+  border-bottom: none; }
+
+/* @end Logo und Hauptmenü */
+/* ------------------------------- */
+/* ******************************* */
+/* ## @group Frontpage News und Teaserboxen## */
+.front .grid-4.region-postscript-third {
+  margin-left: 2%; }
+
+.front .grid-4 table tr td {
+  background: #768f76; }
+
+.front .grid-4 table tr td:hover {
+  background: #ef7900; }
+
+.front .view-news .views-row {
+  border-bottom: 1px solid #90a490; }
+
+/* Schriftgrößen der Überschriften in den Teaserboxen und Newsbox auf 16 px 18*0.9==>16 */
+.front .view-news h2 a {
+  font-size: 0.9em; }
+
+.front .view-frontpage-teaser-boxen .views-field-title a {
+  color: white; }
+
+.front .view-frontpage-teaser-boxen p {
+  color: #d7eed7; }
+
+/* Promo Box */
+.view-frontpage-promo-box {
+  background-color: #718471;
+  padding: 15px 2%; }
+
+.promo-title a {
+  font-size: 1.15em;
+  color: white !important; }
+
+.promo-content {
+  margin: 30px 0 20px 0; }
+
+.view-frontpage-promo-box .field-name-field-promo-bilder-klein div div img {
+  margin-top: 10px; }
+
+.view-frontpage-promo-box .field-name-field-promo-bilder-klein div div.even img {
+  float: left;
+  margin-right: 2%; }
+
+/* @end Frontpage News und Teaserboxen */
+/* ------------------------------- */
+/* ******************************* */
+/* ## @group Projekte Übersicht >> Tabelle ## */
+.view-projekt-bersicht-frei-finanzierte-projekte tr td {
+  background: #eaeaea;
+  vertical-align: top;
+  padding-top: 15px;
+  padding-left: 5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; }
+
+.view-projekt-bersicht-frei-finanzierte-projekte tr td:hover {
+  background: #ef7900; }
+
+.view-projekt-bersicht-frei-finanzierte-projekte tr td.col-1,
+.view-projekt-bersicht-frei-finanzierte-projekte tr td.col-2 {
+  border-right: 2px solid rgba(0, 0, 0, 0);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; }
+
+.view-projekt-bersicht-frei-finanzierte-projekte .views-field-title {
+  margin-bottom: 12px; }
+
+.views-field-title .field-content a {
+  color: #768f76;
+  text-decoration: none; }
+
+.views-field-field-groesse {
+  margin-top: 12px;
+  float: left;
+  margin-right: 80px; }
+
+.views-field-field-preis {
+  margin-top: 12px;
+  float: left; }
+
+/* filter auf projekt übersichtsseite */
+.zone-content .grid-3.region-sidebar-first {
+  width: 23.40426%;
+  margin-right: 2.12766%; }
+
+.zone-content .grid-9.region-content {
+  width: 74.46809%; }
+
+/* @end Projekte Übersicht >> Tabelle */
+/* @group Projekte Detail */
+.ds-3col-stacked-equal.node-projekte .group-header {
+  width: 100%; }
+
+.group_projekt_projektbilder {
+  float: right;
+  width: 66.14583%;
+  margin-left: 1.35417%; }
+
+.group_projektdetail_projektinfos {
+  float: left;
+  width: 31.25%; }
+
+.group_projekte_infos_links {
+  float: left;
+  width: 45%;
+  margin-right: 5%; }
+
+.group_projekte_infos_rechts {
+  float: right;
+  width: 45%;
+  margin-left: 5%; }
+
+.group_projektdetail_weitereinfos, .group_wohnungstypen {
+  clear: both; }
+
+.ds-3col-stacked-equal .group-left {
+  clear: both; }
+
+.field-wohnungstypen-bilder .field-projekt-wohnungstyp {
+  float: left; }
+  .field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 {
+    font-size: 0.9em; }
+    .field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 a:link, .field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 a:visited, .field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 a:hover, .field-wohnungstypen-bilder .field-projekt-wohnungstyp h3 a:active {
+      text-decoration: none; }
+
+/* @group Image Gallery in Projekte Detail */
+.field-name-field-projekt-bilder-klein img {
+  float: left;
+  z-index: 10;
+  margin: 3px 4px 3px 0px; }
+
+.field-projekt-bilder-klein:nth-child(5n+5) img {
+  margin-right: 0px; }
+
+/* @end Image Gallery */
+/* @group Stammdaten Flächendaten Technische Daten Kaufdaten */
+.node-type-projekte .group-left {
+  clear: both; }
+
+.outer-wrapper {
+  display: block;
+  clear: left; }
+  .outer-wrapper .label-inline {
+    float: left; }
+
+.flaechendaten .sonstiges-field-items {
+  display: block; }
+  .flaechendaten .sonstiges-field-items div.second-column {
+    float: left; }
+
+.node-projekte.view-mode-full .group-left,
+.node-projekte.view-mode-full .group-middle,
+.node-projekte.view-mode-full .group-right {
+  width: 30%;
+  margin-right: 5%; }
+
+.node-projekte.view-mode-full .group-right {
+  margin-right: 0; }
+
+.node-projekte.view-mode-full .group-left,
+.node-projekte.view-mode-full .group-middle,
+.node-projekte.view-mode-full .group-right > div.group_technische_daten {
+  background: #586b58 url(../images/datenbox-bg.png) repeat-x top left; }
+
+.node-projekte.view-mode-full .group-right > div.group_kaufdaten {
+  background: #eaeaea url(../images/datenbox-kauf-bg.png) repeat-x top left; }
+
+/* @end Stammdaten */
+/* @group filter */
+.views-exposed-form .views-exposed-widget {
+  float: none; }
+
+/* @end filter */
+.field-name-field-projekt-wohnungstyp {
+  position: relative;
+  display: inline; }
+  .field-name-field-projekt-wohnungstyp .field-items .field-item {
+    float: left; }
+
+/** @end Projekte Detail ** */
+/** @group Wohnungstypen Detail ** */
+.group_wht_teaser {
+  display: block; }
+  .group_wht_teaser .field-objektart-reloaded, .group_wht_teaser .groesse-zimmer {
+    float: left; }
+
+.group_objekt_objektbilder {
+  float: right;
+  width: 66.14583%;
+  margin-left: 1.35417%; }
+
+.group_objektdetail_objektinfos {
+  float: left;
+  width: 31.25%; }
+
+.group_wohnungstypen_stammdaten {
+  clear: both; }
+
+.field-wohnungstyp-bilder-klein img {
+  float: left;
+  z-index: 10;
+  margin: 3px 4px 3px 0px; }
+
+.field-wohnungstyp-bilder-klein:nth-child(5n+5) img {
+  margin-right: 0px; }
+
+/** @end Wohnungstypen Detail ** */
+/*@group Bauträger Detail */
+.group_bautraeger_logo_data {
+  display: block; }
+  .group_bautraeger_logo_data .field-bautraeger-logo {
+    float: left;
+    margin-right: 2%;
+    width: 42%; }
+  .group_bautraeger_logo_data .field-bautraeger-daten {
+    float: left;
+    width: 56%; }
+
+.aktuelle-projekte-field-item, .weitere-projekte-field {
+  float: left; }
+
+.aktuelle-projekte-field-item.even {
+  margin-right: 9px; }
+
+.view-mode-bautraeger_weitere h3 {
+  font-size: 0.9em;
+  margin: 10px 0; }
+  .view-mode-bautraeger_weitere h3 a:link, .view-mode-bautraeger_weitere h3 a:visited, .view-mode-bautraeger_weitere h3 a:hover, .view-mode-bautraeger_weitere h3 a:active {
+    text-decoration: none; }
+
+/* @Bauträger Stellt sicher, dass die Überschrift "Weitere Projekte" im iPad unter den Bildern von Aktuelle Projekte steht */
+.field-weitere-projekte {
+  clear: both; }
+
+.weitere-projekte-field {
+  margin-right: 8px; }
+
+.weitere-projekte-field:nth-child(3n+4) {
+  margin-right: 0px; }
+
+/* @group Team Referenz Bauträger Detail */
+.field-bautraeger-team-reference .node-team {
+  float: left; }
+
+/* @end Team Referenz Bauträger Detail */
+/** @end Bauträger Detail ** */
+/* ------------------------------- */
+/* ******************************* */
+/* ## @group News ## */
+/* @end News */
+/* ------------------------------- */
+.node-news .field-image {
+  float: left;
+  margin-right: 2%; }
+
+.group_news_header .field-title {
+  float: left; }
+
+.group_news_header .beitragsdatum {
+  float: right;
+  color: #768f76;
+  font-size: 0.625em; }
+
+.group_news_inhalt {
+  clear: both; }
+
+/* ******************************* */
+/* ## @group Footer ## */
+#section-footer .zone-footer-wrapper {
+  background-image: url("../images/footer-strip.png");
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  height: 270px; }
+
+.footer-middle-left.google {
+  float: left; }
+
+/* @end Footer */
+/* Loading Allgemeines Kontaktformular in a Colorbox */
+#colorbox article.node-webform {
+  background-color: white;
+  padding: 20px; }

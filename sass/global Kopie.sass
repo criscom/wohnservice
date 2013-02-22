@@ -1,5 +1,3 @@
-/* Stylsheet für globale Styles und für iPhone etc */
-
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global SASS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
@@ -103,7 +101,7 @@ tr.even, tr.odd
 	margin-left: 2%
 
 .front .grid-4 table tr td
-	background: $green 
+	background: $green
 
 //.front .grid-4.region-postscript-second table tr td
 //	border-left: 3px solid rgba(0, 0, 0, .0)
@@ -237,7 +235,7 @@ tr.even, tr.odd
 .ds-3col-stacked-equal .group-left
 	clear: both
 
-.field-name-wohnungstypen-bilder .field-name-field-projekt-wohnungstyp
+.field-wohnungstypen-bilder .field-projekt-wohnungstyp
 	float: left
 	
 	h3
@@ -250,12 +248,12 @@ tr.even, tr.odd
 
 /* @group Image Gallery in Projekte Detail */
 
-.field-name-field-projekt-bilder-klein img
+.field-projekt-bilder-klein img
 	float: left
 	z-index: 10
-	margin: 3px 2px 3px 0px /* 635 px / 12 px / 1.88976378% */
+	margin: 3px 4px 3px 0px /* 635 px / 12 px / 1.88976378% */
 
-.field-name-projekt-bilder-klein:nth-child(5n+5) img
+.field-projekt-bilder-klein:nth-child(5n+5) img
 	margin-right: 0px
 	
 /* @end Image Gallery */
@@ -304,14 +302,6 @@ tr.even, tr.odd
 
 /* @end filter */
 
-.field-name-field-projekt-wohnungstyp
-	position: relative
-	display: inline
-	
-	.field-items .field-item
-		float: left
-		
-		.node-wohnungstype
 
 /*** @end Projekte Detail ***/
 
@@ -360,33 +350,11 @@ tr.even, tr.odd
 		float: left
 		width: 56%
 
-//.bautraeger-detail-2col-stacked::after/* self-clearing http://www.ejeliot.com/samples/clearing/self-clearing.html */
-//	content: "."
-//	display: block
-//	height: 0
-//	clear: both
-//	visibility: hidden
-
-
-.bautraeger-detail-2col-stacked .container1
-	background-color: $grey
-	margin-bottom: 10px
-	
-	div.clear-float
-		clear: left
-
-.node-bautr-ger .group-left
-	width: 40%
-	margin-right: 2%
-
-.node-bautr-ger .group-right
-	width: 58%
-
-.outer-wrapper-aktuelle-projekte .aktuelle-projekte-field-item, .weitere-projekte-field
-	float: left !important
+.aktuelle-projekte-field-item, .weitere-projekte-field
+	float: left
 
 .aktuelle-projekte-field-item.even /* Margin zwischen den Aktuelle Projekte Bildern auf der Bauträger Detail ==> gehört eher ins narrow.css */
-	margin-right: 1%
+	margin-right: 9px
 	
 .view-mode-bautraeger_weitere h3 /* Überschriften unter Weitere Projekte auf der Bauträger Detailseite */
 	font-size: 0.9em
@@ -396,29 +364,20 @@ tr.even, tr.odd
 		text-decoration: none
 
 /* @Bauträger Stellt sicher, dass die Überschrift "Weitere Projekte" im iPad unter den Bildern von Aktuelle Projekte steht */
-.field-name-field-weitere-projekte	
+.field-weitere-projekte	
 	clear: both
 
 .weitere-projekte-field
-	margin-right: 1%
+	margin-right: 8px
 
 .weitere-projekte-field:nth-child(3n+4)
 	margin-right: 0px
 
 /* @group Team Referenz Bauträger Detail */
 
-.bautraeger-detail-2col-stacked .group-footer .footer-wrapper
-	background-color: $boxgreen
-
-.field-name-field-bautraeger-team-reference div.field-items::after /* self-clearing http://www.ejeliot.com/samples/clearing/self-clearing.html */
-	content: "."
-	display: block
-	height: 0
-	clear: both
-	visibility: hidden
-
-.field-name-field-bautraeger-team-reference div.field-items div.field-item .node-team
+.field-bautraeger-team-reference .node-team
 	float: left
+
 
 
 /* @end Team Referenz Bauträger Detail */
@@ -430,11 +389,15 @@ tr.even, tr.odd
 /* ## @group News ## */
 
 
-.node-news .field-name-field-image
+
+/* @end News */
+/* ------------------------------- */
+
+.node-news .field-image
 	float: left
 	margin-right: 2%
 
-.group_news_header .field-name-title
+.group_news_header .field-title
 	float: left
 
 .group_news_header .beitragsdatum
@@ -444,9 +407,6 @@ tr.even, tr.odd
 
 .group_news_inhalt
 	clear: both
-
-/* @end News */
-/* ------------------------------- */
 
 /* ******************************* */
 /* ## @group Footer ## */
