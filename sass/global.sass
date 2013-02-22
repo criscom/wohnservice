@@ -17,7 +17,7 @@ $lhmain: 1.125em // Specifies the main line height for the site, which is 18px; 
 $size18: 1.125em // Schriftgröße 18 px für Title und Header ==> Bauträger Übersicht; Projekt Detail; Stammdaten Überschrift; 16*1.125=18
 $size14: 0.875em // Schriftgröße für den Standardtext als auch für die Titel/Header in der Projektübersicht; 16*0.875=14
 $size12: 0.75em  // Schriftgröße 12px
-$size10: 0.625em // Schriftgröße 10px
+$size10: 0.625em // Schriftgröße 10px	
 
 /* ******************************* */
 /* ## admin bereich ## */
@@ -55,6 +55,10 @@ h1, h2
 	font-family: $mainfont
 	font-size: $size18
 	color: $green
+	font-weight: normal
+	background: url(../images/title-bg.png) repeat-x left bottom
+	padding-bottom: 10px
+	
 	
 p, .field-content
 	color: $fontgrey
@@ -64,6 +68,8 @@ h1 a, h2 a, .views-field-title a
 	color: $green
 	font-weight: normal
 
+
+	
 /* @end general declarations */
 /* ------------------------------- */
 	
@@ -370,6 +376,7 @@ tr.even, tr.odd
 
 .bautraeger-detail-2col-stacked .container1
 	background-color: $grey
+	padding: 10px
 	margin-bottom: 10px
 	
 	div.clear-float
