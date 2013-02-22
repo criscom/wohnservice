@@ -321,8 +321,6 @@ tr.even, tr.odd
 	.field-items .field-item
 		float: left
 		
-		.node-wohnungstype
-
 /*** @end Projekte Detail ***/
 
 /*** @group Wohnungstypen Detail ***/
@@ -450,17 +448,77 @@ tr.even, tr.odd
 .weitere-projekte-field:nth-child(3n+4)
 	margin-right: 0px
 
+/* @end Bauträger Groups */
+
 /* @group Team Referenz Bauträger Detail */
 
 .bautraeger-detail-2col-stacked .group-footer .footer-wrapper
 	background-color: $boxgreen
 
-.field-name-field-bautraeger-team-reference div.field-items::after /* self-clearing http://www.ejeliot.com/samples/clearing/self-clearing.html */
-	content: "."
-	display: block
-	height: 0
-	clear: both
-	visibility: hidden
+// .field-name-field-bautraeger-team-reference div.field-items::after /* self-clearing http://www.ejeliot.com/samples/clearing/self-clearing.html */
+//	content: "."
+//	display: block
+//	height: 0
+//	clear: both
+//	visibility: hidden
+
+.group-footer .footer-wrapper 
+	padding: 10px
+	
+	.field-name-field-bautraeger-team-heading
+
+		margin-bottom: 15px
+		
+		div div
+			font-size: 1.1em
+			color: white
+			font-weight: normal
+
+	.field-name-field-bautraeger-website-link
+		float: right
+		
+		a:link, a:visited, a:hover, a:active
+			display: block
+			color: white 
+			background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F1871A), to(#D76D01))
+			background-image: -moz-linear-gradient (0% 100% 90deg, #f1871a, #d76d01)
+			background-color: $orange
+			padding: 3px 5px
+			text-decoration: none
+			font-size: .8em
+			overflow: hidden
+				
+	.field-name-field-bautraeger-team-reference
+		margin-top: 10px
+		padding-top: 20px
+		background: url("../images/bg_dotted-line-white.png") repeat-x left top
+		
+		.field-items
+			overflow: auto
+		
+			.field-item .node-team
+				width: 165px
+				margin-right: 20px
+				
+				div.field-name-field-team-bild div div img
+					border: 1px solid white
+					
+				div.field-name-title div div h2
+					background: none
+					color: white
+					font-size: .85em
+					margin-top: 10px
+					margin-bottom: 0px
+					
+				div.field-name-field-team-funktion div div
+					color: $boxfontgreen
+					font-size: .85em
+					padding-bottom: 10px
+
+				div.field-name-field-team-telefon, div.field-name-field-team-email
+					color: white
+					font-size: .85em
+	
 
 .field-name-field-bautraeger-team-reference div.field-items div.field-item .node-team
 	float: left
