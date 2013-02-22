@@ -394,29 +394,47 @@ tr.even, tr.odd
 	margin-bottom: 10px
 	
 	div.clear-float
-		clear: left
+		clear: both
 
 
 
 .node-bautr-ger .group-left
-	width: 40%
+	width: 39%
 	margin-right: 2%
 
 .node-bautr-ger .group-right
-	width: 58%
+	width: 59%
+	
+	div.aktuelle-projekte-field-item div.ds-1col h3
+		background: none
+		margin-bottom: 10px
+		padding-bottom: 0px
+		a
+			text-decoration: none
+			font-size: 0.8em
+			color: $green
 
-.outer-wrapper-aktuelle-projekte .aktuelle-projekte-field-item, .weitere-projekte-field
+.outer-wrapper-aktuelle-projekte
+	overflow: auto
+
+.outer-wrapper-aktuelle-projekte .aktuelle-projekte-field-item .node-projekte, .weitere-projekte-field
 	float: left !important
 
-.aktuelle-projekte-field-item.even /* Margin zwischen den Aktuelle Projekte Bildern auf der Bauträger Detail ==> gehört eher ins narrow.css */
+.field-name-field-weitere-projekte /* Container für Weiter Projekte Überschrift */
+	margin-top: 15px
+
+.aktuelle-projekte-field-item.even .node-projekte /* Margin zwischen den Aktuelle Projekte Bildern auf der Bauträger Detail ==> gehört eher ins narrow.css */
 	margin-right: 1%
 	
 .view-mode-bautraeger_weitere h3 /* Überschriften unter Weitere Projekte auf der Bauträger Detailseite */
 	font-size: 0.9em
-	margin: 10px 0 
+	margin: 0
+	background: none
+	
 	
 	a:link, a:visited, a:hover, a:active
 		text-decoration: none
+		color: $green
 
 /* @Bauträger Stellt sicher, dass die Überschrift "Weitere Projekte" im iPad unter den Bildern von Aktuelle Projekte steht */
 .field-name-field-weitere-projekte	
@@ -424,6 +442,10 @@ tr.even, tr.odd
 
 .weitere-projekte-field
 	margin-right: 1%
+	
+	.node-projekte
+		width: 174px
+		margin-bottom: 20px
 
 .weitere-projekte-field:nth-child(3n+4)
 	margin-right: 0px
