@@ -61,6 +61,10 @@
   width: 230px; }
 
 /* Promo Box */
+.view-frontpage-promo-box {
+  padding: 15px 10px 15px 15px;
+  background: #586b58 url("../images/promo-box.png") no-repeat top left; }
+
 .view-frontpage-promo-box .field-name-field-promo-bilder-klein div div.even img {
   margin-right: 15px; }
 
