@@ -473,41 +473,4 @@ div.node-projekte h2.projekt-title {
 
 #block-system-main .group-header .group_projekte_infos_links {
 	color: #404040;
-	font-size: 0.9em;
-	margin-right: 0 !important;
-	width: 50%;
-	padding-bottom: 10px;
-}
-
-#block-system-main .group-header .group_projekte_infos_rechts {
-	color: #404040;
-	font-size: 0.8em;
-	font-weight: bold;
-	text-align: right;
-	padding-bottom: 10px;
-}
-
-#block-system-main .group-header .group-projektdetail-weitereinfos {
-  padding-top: 10px;
-  background: url('../images/title-bg.png') top left repeat-x;
-  color: #404040;
-  font-size: 0.9em;
-  padding-bottom: 10px;
-}
-
-#block-system-main .group-header .field-name-field-projekt-wohnungstyp > div {
-	clear: left;
-	padding-top: 10px;
-}
-
-#block-system-main .group-header .field-name-field-projekt-wohnungstyp div div > a {
-	color: #ef7900;
-	font-size: 0.9em;
-	text-decoration: none;
-}
-
-.group_projekt_projektbilder .field-name-field-projekt-bilder-klein img:hover {
-	outline: 1px solid #ef7900 !important;
-	border-collapse: collapse;
-	background: url('../images/news_corner_hover.png') top right no-repeat #eee;
 }
