@@ -204,7 +204,7 @@ div.view-id-news .field-name-title h2 {
 	margin-bottom: 2px;
 }
 
-div.view-id-news .field-name-body {
+.front div.view-id-news .field-name-body {
 	font-size: 1em;
 }
 
@@ -215,15 +215,15 @@ div.view-id-news .field-name-post-date {
 	font-weight: normal;
 }
 
-div.view-id-news .node-news {
+.front div.view-id-news .node-news {
 	background-color: #718471;
 }
 
-div.view-id-news .node-news .group-right {
+.front div.view-id-news .node-news .group-right {
 	background: url(../images/news_corner.png) top right no-repeat #eee;
 }
 
-div.view-id-news .node-news:hover {
+.front div.view-id-news .node-news:hover {
 	background-color: #b6c2b6;
 	outline: 1px solid #ef7900;
 	border-collapse: collapse;

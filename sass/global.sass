@@ -61,7 +61,13 @@ h1, h2, h3
 	background: url(../images/title-bg.png) repeat-x left bottom
 	padding-bottom: 10px
 	margin-bottom: 10px
-	
+	text-transform: Uppercase
+
+.zone-footer
+	h1,
+	h2,
+	h3
+		text-transform: none !important
 	
 p, .field-content
 	color: $fontgrey
@@ -72,7 +78,13 @@ h1 a, h2 a, .views-field-title a
 	color: $green
 	font-weight: normal
 
-
+.field-name-body
+	a:link, 
+	a:visited, 
+	a:hover, 
+	a:active
+		color: $orange
+		text-decoration: none
 	
 /* @end general declarations */
 /* ------------------------------- */
@@ -123,7 +135,7 @@ tr.even, tr.odd
 .front .grid-4 table tr td:hover
 	background: $orange
 
-.front .view-news .views-row
+.view-news .views-row
 	border-bottom: 1px solid $bodygreen
 
 /* Schriftgrößen der Überschriften in den Teaserboxen und Newsbox auf 16 px 18*0.9==>16*/
@@ -389,7 +401,7 @@ tr.even, tr.odd
 
 .bautraeger-detail-2col-stacked .container1
 	background-color: $grey
-	padding: 10px
+	padding: 20px 10px
 	margin-bottom: 10px
 	
 	div.clear-float
@@ -625,13 +637,75 @@ body.node-type-beratung .group-footer .field-name-field-bautraeger-team-referenc
 	div.field-name-field-team-telefon, div.field-name-field-team-email
 		color: white
 		font-size: .85em
-	
-	
-	
-
 
 /** @end Beratung **/
 /* ------------------------------- */
+
+/* ******************************* */
+/* ## @group NEWS ## */
+
+body.context-news .zone-content .grid-3.region-sidebar-first
+	margin-right: 15px
+
+body.context-news .region-content .node-news
+	background-color: $grey
+	padding: 25px 15px
+	
+	h2
+		padding-bottom: 8px
+		background: none
+
+body.context-news .node-news .group-news-inhalt
+	background: url(../images/title-bg.png) repeat-x left top
+	padding: 18px 0 0 0
+	
+	img
+		outline: 1px solid $boxgreen
+		
+.beitragsdatum .first-column
+	padding-right: 5px
+	
+.view-news
+	h1,
+	h2,
+	h3
+		text-transform: none
+
+
+.view-news .view-content .views-row 
+	background-color: $boxgreen
+	
+	.node-news .group-left
+		width: 11%
+		padding: 4% 2%
+		margin: 0
+		font-size: .85em
+
+.view-news .view-content .views-row .node-news .group-right
+	width: 79%
+	padding: 4% 3%
+	margin: 0
+	
+	h2
+		margin-bottom: 10px
+	
+.view-news .view-content .views-row .node-news .group-right
+	background: url(../images/news_corner.png) top right no-repeat #eee
+
+
+.view-news .view-content .views-row .node-news:hover
+	background-color: #b6c2b6
+	outline: 1px solid #ef7900
+	border-collapse: collapse
+
+.view-news .view-content .views-row .node-news:hover > .group-right
+	background: url(../images/news_corner_hover.png) top right no-repeat #eee
+
+/** @end News **/
+/* ------------------------------- */
+
+/* ******************************* */
+/* ## @group Footer ## */
 
 /* ******************************* */
 /* ## @group Footer ## */
