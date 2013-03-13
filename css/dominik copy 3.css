@@ -783,13 +783,6 @@ body.page-bautraeger h1.title {
 	margin-bottom: 20px;
 }
 
-.view-id-ansicht_bautraeger_uebersicht > div:hover {
-	padding: 5px;
-	outline: 1px solid #ef7900 !important;
-	background: url('../images/news_corner_hover.png') top right no-repeat #eee;
-	margin-bottom: 20px;
-}
-
 .view-id-ansicht_bautraeger_uebersicht > div h2 {
 	padding-top: 5px;
 }
@@ -804,52 +797,4 @@ body.page-bautraeger h1.title {
 	font-size: 0.95em;
 	padding-left: 5px;
 	font-weight: bold;
-	color: #404040;
-}
-
-.view-id-ansicht_bautraeger_uebersicht .bis-label {
-	font-size: 0.9em;
-	padding-left: 5px;
-	color: #404040;
-}
-
-.view-id-ansicht_bautraeger_uebersicht .field-type-text-with-summary {
-	color: #404040;
-	font-size: 0.85em;
-}
-
-.aktuelle-projekte-field-item .node-projekte:first-child {
-	width: 269px;
-}
-
-.aktuelle-projekte-field-item .field-name-field-projekt-bild a,
-.weitere-projekte-field .field-name-field-projekt-bild a {
-	height: 156px;
-	width: 256px;
-	position: relative;
-	display: block;
-}
-
-.projektimghover {
-	position: absolute;
-	top: 0;
-	left: 1px;
-	background: url('../images/news_corner2.png') top right no-repeat;
-	width: 264px;
-	height: 155px;
-}
-
-.projektimghover2 {
-	position: absolute;
-	top: 0;
-	left: 1px;
-	background: url('../images/news_corner2.png') top right no-repeat;
-	width: 173px;
-	height: 100px;
-}
-
-.projektimghover:hover,
-.projektimghover2:hover {
-	background: url('../images/news_corner_hover2.png') top right no-repeat;
-	outline: 1px solid #ef7900 !important;
 }

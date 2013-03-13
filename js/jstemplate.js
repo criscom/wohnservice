@@ -1,7 +1,8 @@
 /* JQuery Template für wohnservice.at - alle JQuery Befehle */
 
-(function ($) {
-  $(document).ready(function() {
+(function ($) {  
+
+	$(document).ready(function() {
 
 		$("div.projekt-bild-gross").children("a").addClass("colorbox init-colorbox-processed cboxElement");
 		$("div.projekt-bild-gross").children("a").attr('rel', 'galerie_projekte');
@@ -26,9 +27,63 @@
 			$('.view-projekt-bersicht-frei-finanzierte-projekte .pager-next a').html("n&auml;chste");
 		}
 		
+		
 		/*if ($('#block-system-main .group-header .field-name-anfrage').length > 0) {
 			$('#block-system-main .group-header').before($('#block-system-main .group-header .field-name-anfrage'));
 		}*/
+		
+		if ($('.item-list .pager .pager-next').length == 0) {
+			$('.item-list .pager').append('<li class="pager-next">nächste</li>');
+		}
+		
+		if ($('.item-list .pager .pager-previous').length == 0) {
+			$('.item-list .pager').append('<li class="pager-previous">zurück</li>');
+		}
+		
+		
+		$('input[type="checkbox"]').next('label').prepend("<span></span>");
+		$('input[type="radio"]').next('label').prepend("<span></span>");
+		
+		$('.node-projekte .group-header').after($('.group_wohnungstypen'));
+		
+		var projectheight = $('.group_projekt_projektbilder').height();
+		var leftsideheight = $('#block-system-main .group-header .group_projektdetail_projektinfos').height();
+		if (projectheight > leftsideheight) {
+			$('#block-system-main .group-header .group_projektdetail_projektinfos').height(projectheight-7);
+		}
+		
+		$('.field-name-field-projekt-bilder-klein a').mouseenter(function() {
+			$('div.imghover').remove();
+			$(this).append('<div class="imghover"></div>');
+			$(this).find('div.imghover').mouseleave(function() {
+				$('div.imghover').remove();
+			});
+		});
+		
+		//Projektdetailseite unten: Höhe bestimmen und entsprechend die anderen zwei Spalten anpassen
+		var heightleft = $('.node-projekte .group-left').height();
+		var heightmiddle = $('.node-projekte .group-middle').height();
+		var heightright = $('.node-projekte .group-right').height();
+		if ((heightleft >= heightmiddle) && (heightleft >= heightright))
+		{
+			$('.node-projekte .group-middle').height(heightleft);
+			$('.node-projekte .group-right').height(heightleft);
+		} else if ((heightmiddle >= heightleft) && (heightmiddle >= heightright)) {
+			$('.node-projekte .group-left').height(heightmiddle);
+			$('.node-projekte .group-right').height(heightmiddle);
+		} else if ((heightright >= heightmiddle) && (heightright >= heightleft)) {
+			$('.node-projekte .group-middle').height(heightright);
+			$('.node-projekte .group-left').height(heightright);
+		}
+		
+		$('.field-name-title h3').each(function(){
+			if ($(this).height() > 20) {
+					$(this).height(18);
+			}	
+		});
+		
+		$('.aktuelle-projekte-field-item .field-name-field-projekt-bild a').append('<div class="projektimghover"></div>');
+		$('.weitere-projekte-field .field-name-field-projekt-bild a').append('<div class="projektimghover2"></div>');
 		
 	});
 
