@@ -302,6 +302,13 @@ tr.even, tr.odd {
 .field-name-field-wohnungstyp-bilder-klein:nth-child(4n+4) div div img {
   margin-right: 0px; }
 
+.group_objekt_wrapper::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
 /** @end Wohnungstypen Detail ** */
 /*@group Bauträger Detail */
 .group_bautraeger_logo_data {
