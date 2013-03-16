@@ -848,10 +848,11 @@ body.page-bautraeger h1.title {
 
 .aktuelle-projekte-field-item .field-name-field-projekt-bild a,
 .weitere-projekte-field .field-name-field-projekt-bild a {
-	height: 156px;
+/*	height: 156px;*/
 	width: 256px;
 	position: relative;
 	display: block;
+	background: black;
 }
 
 .projektimghover {
