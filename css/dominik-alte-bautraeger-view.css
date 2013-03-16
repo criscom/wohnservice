@@ -287,18 +287,18 @@ div.view-id-news .node-news:hover > .group-right {
 
 /*** Projekte ***/
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page div.views-exposed-form,
-form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page div.views-exposed-form {
 	background-color: #718471;
 	padding: 20px;
 }
 
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page div.views-exposed-form a.bef-toggle,
-form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form a.bef-toggle {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page div.views-exposed-form a.bef-toggle {
 	display: none;
 }
 
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page div.views-exposed-form label.option,
-form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form label.option {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page div.views-exposed-form label.option {
 	color: #c0d6c0;
 	font-weight: normal;
 	font-size: 0.8em;
@@ -306,7 +306,7 @@ form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form label.
 }
 
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page div.views-exposed-form .bef-checkboxes,
-form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form .bef-checkboxes {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page div.views-exposed-form .bef-checkboxes {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -314,28 +314,28 @@ form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form .bef-c
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page #edit-term-node-tid-depth-wrapper,
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page #edit-field-plz-tid-wrapper,
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page #edit-field-plz-oesterreich-tid-wrapper,
-form#views-exposed-form-bautraeger-uebersicht-page #edit-term-node-tid-depth-wrapper,
-form#views-exposed-form-bautraeger-uebersicht-page #edit-field-plz-tid-wrapper,
-form#views-exposed-form-bautraeger-uebersicht-page #edit-field-plz-oesterreich-tid-wrapper {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page #edit-term-node-tid-depth-wrapper,
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page #edit-field-plz-tid-wrapper,
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page #edit-field-plz-oesterreich-tid-wrapper {
 	border-bottom: 1px dashed #dcdfdc;
 	padding-bottom: 15px;
 }
 
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page #edit-field-plz-tid-wrapper,
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page #edit-field-plz-oesterreich-tid-wrapper,
-form#views-exposed-form-bautraeger-uebersicht-page #edit-field-plz-tid-wrapper,
-form#views-exposed-form-bautraeger-uebersicht-page #edit-field-plz-oesterreich-tid-wrapper {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page #edit-field-plz-tid-wrapper,
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page #edit-field-plz-oesterreich-tid-wrapper {
 	padding-top: 15px;
 }
 
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page div.views-exposed-form a.fieldset-title,
-form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form a.fieldset-title {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page div.views-exposed-form a.fieldset-title {
 	color: #fff;
 	text-decoration: none;
 }
 
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page div.views-exposed-form .collapsed span.fieldset-legend,
-form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form .collapsed span.fieldset-legend {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page div.views-exposed-form .collapsed span.fieldset-legend {
 	padding-left: 0px;
 	width: 180px;
 	background: url('../images/legend_no_dropdown.png') no-repeat;
@@ -343,7 +343,7 @@ form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form .colla
 }
 
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page div.views-exposed-form span.fieldset-legend,
-form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form span.fieldset-legend {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page div.views-exposed-form span.fieldset-legend {
 	padding-left: 0px;
 	width: 180px;
 	background: url('../images/legend_dropdown.png') no-repeat;
@@ -351,7 +351,7 @@ form#views-exposed-form-bautraeger-uebersicht-page div.views-exposed-form span.f
 }
 
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page label[for='edit-field-groesse-value'],
-form#views-exposed-form-bautraeger-uebersicht-page label[for='edit-field-groesse-value'] {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page label[for='edit-field-groesse-value'] {
 	color: #fff;
 	font-weight: normal;
 	padding-top: 15px;
@@ -359,8 +359,8 @@ form#views-exposed-form-bautraeger-uebersicht-page label[for='edit-field-groesse
 
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page #edit-field-groesse-value-min,
 form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page #edit-field-groesse-value-max,
-form#views-exposed-form-bautraeger-uebersicht-page #edit-field-groesse-value-min,
-form#views-exposed-form-bautraeger-uebersicht-page #edit-field-groesse-value-max {
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page #edit-field-groesse-value-min,
+form#views-exposed-form-ansicht-bautraeger-uebersicht-page #edit-field-groesse-value-max {
 	width: 75px;
 	float: left;
 	background: url('../images/groesse_edit_bg.png') repeat-x #efefef;
@@ -395,10 +395,7 @@ form#views-exposed-form-projekt-bersicht-frei-finanzierte-projekte-page #edit-fi
 }
 
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager,
-#block-views-news-block-1 .item-list ul.pager,
-div.view-id-bautraeger_uebersicht ul.pager
-
-{
+#block-views-news-block-1 .item-list ul.pager {
 	text-align: center;
 	width: 95%;
 	margin-left: auto;
@@ -415,20 +412,12 @@ div.view-id-bautraeger_uebersicht ul.pager
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-first,
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-last,
 #block-views-news-block-1 .item-list ul.pager .pager-first,
-#block-views-news-block-1 .item-list ul.pager .pager-last,
-div.view-id-bautraeger_uebersicht ul.pager .pager-first,
-div.view-id-bautraeger_uebersicht ul.pager .pager-last
-
-
- {
+#block-views-news-block-1 .item-list ul.pager .pager-last {
 	display: none;
 }
 
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-next,
-#block-views-news-block-1 .item-list ul.pager .pager-next,
-div.view-id-bautraeger_uebersicht ul.pager .pager-next
-
-{
+#block-views-news-block-1 .item-list ul.pager .pager-next {
 	right: -14px;
 	background: url('../images/pfeil_rechts.png') no-repeat;
 	width: 78px;
@@ -442,19 +431,14 @@ div.view-id-bautraeger_uebersicht ul.pager .pager-next
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-next a,
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-previous a,
 #block-views-news-block-1 .item-list ul.pager .pager-next a,
-#block-views-news-block-1 .item-list ul.pager .pager-previous a, 
-div.view-id-bautraeger_uebersicht ul.pager .pager-next a,
-div.view-id-bautraeger_uebersicht ul.pager .pager-previous a
-{
+#block-views-news-block-1 .item-list ul.pager .pager-previous a {
 	background: none;
 	color: #fff;
 	padding: 0;
 }
 
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-previous,
-#block-views-news-block-1 .item-list ul.pager .pager-previous, 
-div.view-id-bautraeger_uebersicht ul.pager .pager-previous
-{
+#block-views-news-block-1 .item-list ul.pager .pager-previous {
 	position: absolute;
 	left: -14px;
 	background-color: none;
@@ -469,11 +453,7 @@ div.view-id-bautraeger_uebersicht ul.pager .pager-previous
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-item,
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-current,
 #block-views-news-block-1 .item-list ul.pager .pager-item,
-#block-views-news-block-1 .item-list ul.pager .pager-current,
-div.view-id-bautraeger_uebersicht ul.pager .pager-item,
-div.view-id-bautraeger_uebersicht ul.pager .pager-current
-
- {
+#block-views-news-block-1 .item-list ul.pager .pager-current {
 	float: none;
 	border: 0;
 	border-radius: 0;
@@ -486,11 +466,7 @@ div.view-id-bautraeger_uebersicht ul.pager .pager-current
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-item a,
 div.view-projekt-bersicht-frei-finanzierte-projekte ul.pager .pager-current a,
 #block-views-news-block-1 .item-list ul.pager .pager-current a,
-#block-views-news-block-1 .item-list ul.pager .pager-item a,
-div.view-id-bautraeger_uebersicht ul.pager .pager-item a,
-div.view-id-bautraeger_uebersicht ul.pager .pager-current a
-
- {
+#block-views-news-block-1 .item-list ul.pager .pager-item a {
 	background: none;
 	color: #fff;
 	border: 0;
@@ -801,43 +777,43 @@ body.page-bautraeger h1.title {
 	display: none;
 }
 
-.view-id-bautraeger_uebersicht > div > div{
+.view-id-ansicht_bautraeger_uebersicht > div {
 	padding: 5px;
 	background: url('../images/news_corner.png') top right no-repeat #eee;
 	margin-bottom: 20px;
 }
 
-.view-id-bautraeger_uebersicht > div > div:hover {
+.view-id-ansicht_bautraeger_uebersicht > div:hover {
 	padding: 5px;
 	outline: 1px solid #ef7900 !important;
 	background: url('../images/news_corner_hover.png') top right no-repeat #eee;
 	margin-bottom: 20px;
 }
 
-.view-id-bautraeger_uebersicht > div > div h2 {
+.view-id-ansicht_bautraeger_uebersicht > div h2 {
 	padding-top: 5px;
 }
 
-.view-id-bautraeger_uebersicht .anzahl-objekte {
+.view-id-ansicht_bautraeger_uebersicht .anzahl-objekte {
 	font-size: 0.9em;
 	color: #404040;
 }
 
-.view-id-bautraeger_uebersicht .preis-von,
-.view-id-bautraeger_uebersicht .preis-bis {
+.view-id-ansicht_bautraeger_uebersicht .preis-von,
+.view-id-ansicht_bautraeger_uebersicht .preis-bis {
 	font-size: 0.95em;
 	padding-left: 5px;
 	font-weight: bold;
 	color: #404040;
 }
 
-.view-id-bautraeger_uebersicht .bis-label {
+.view-id-ansicht_bautraeger_uebersicht .bis-label {
 	font-size: 0.9em;
 	padding-left: 5px;
 	color: #404040;
 }
 
-.view-id-bautraeger_uebersicht .field-type-text-with-summary {
+.view-id-ansicht_bautraeger_uebersicht .field-type-text-with-summary {
 	color: #404040;
 	font-size: 0.85em;
 }
