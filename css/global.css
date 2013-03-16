@@ -269,6 +269,12 @@ tr.even, tr.odd {
 
 /** @end Projekte Detail ** */
 /** @group Wohnungstypen Detail ** */
+.group_objekt_wrapper {
+  margin-top: 25px;
+  position: relative;
+  background-color: #eeeeee;
+  min-height: 470px; }
+
 .group_wht_teaser {
   display: block; }
   .group_wht_teaser .field-objektart-reloaded, .group_wht_teaser .groesse-zimmer {
@@ -282,7 +288,8 @@ tr.even, tr.odd {
 .group_objektdetail_objektinfos {
   clear: left;
   float: left;
-  width: 31.25%; }
+  width: 30.25%;
+  padding: 5px 0 0 1%; }
 
 .group_wohnungstypen_stammdaten {
   clear: both; }
