@@ -585,6 +585,36 @@ body.context-news .node-news .group-news-inhalt {
 /*@end News */
 /* ------------------------------- */
 /* ******************************* */
+/* ## @group Anfrageformular ## */
+.node-type-webform .region-content .region-inner {
+  background-color: #718471;
+  padding: 20px 10px; }
+  .node-type-webform .region-content .region-inner p {
+    color: #d7eed7; }
+  .node-type-webform .region-content .region-inner h1 {
+    color: white;
+    border-bottom: 1px dashed #dcdfdc;
+    background: none; }
+  .node-type-webform .region-content .region-inner form {
+    margin-top: 10px;
+    border-top: 1px dashed #dcdfdc; }
+    .node-type-webform .region-content .region-inner form label {
+      color: #d7eed7;
+      font-size: 0.875em; }
+      .node-type-webform .region-content .region-inner form label span.form-required {
+        color: #d7eed7; }
+    .node-type-webform .region-content .region-inner form #webform-component-daten {
+      float: right;
+      width: 50%; }
+    .node-type-webform .region-content .region-inner form #webform-component-kontakt div.fieldset-wrapper {
+      float: left;
+      width: 50%;
+      margin-right: 50%; }
+    .node-type-webform .region-content .region-inner form .form-actions {
+      float: left; }
+
+/* @end Anfrageformular */
+/* ******************************* */
 /* ## @group Footer ## */
 /* ******************************* */
 /* ## @group Footer ## */
