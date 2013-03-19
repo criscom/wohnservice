@@ -709,25 +709,10 @@ input[type="radio"]:checked + label span {
 	margin-bottom: 5px;
 }
 
-.field-name-field-wohnungstyp-bilder-klein a {
-	position: relative;
-	display: block;
-	float: left;
-	width: 156px;
-	height: 92px;
-	margin-left: 2px;
-	margin-bottom: 5px;
-}
-
 .group-wohnungstypen .field-name-field-projekt-wohnungstyp > .field-items > div {
 	background: url('../images/news_corner.png') top right no-repeat #eeeeee;
 	padding: 15px;
 	margin-left: 20px;
-}
-
-.group-wohnungstypen .field-name-field-projekt-wohnungstyp > .field-items > div:hover {
-	outline: 1px solid #ef7900 !important;
-	background: url('../images/news_corner_hover.png') top right no-repeat #eee;
 }
 
 .group-wohnungstypen .field-name-field-projekt-wohnungstyp > .field-items > div:first-child {
@@ -767,10 +752,7 @@ input[type="radio"]:checked + label span {
 
 .node-projekte .group-left,
 .node-projekte .group-middle,
-.node-projekte .group-right,
-.node-type-wohnungstype .group-left,
-.node-type-wohnungstype .group-middle,
-.node-type-wohnungstype .group-wohnungstypen-tech-daten {
+.node-projekte .group-right {
 	margin-top: 16px;
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(100%,rgba(255,255,255,0.1)));
@@ -784,20 +766,13 @@ input[type="radio"]:checked + label span {
 .node-projekte .group-stammdaten,
 .node-projekte .group_flaechendaten,
 .node-projekte .group_technische_daten,
-.node-projekte .group_kaufdaten,
-.node-type-wohnungstype .group_wohnungstypen_stammdaten,
-.node-type-wohnungstype .group-wohnungstypen-flaechdaten,
-.node-type-wohnungstype .group-wohnungstypen-tech-daten,
-.node-type-wohnungstype .group_wohnungstypen_kaufdaten {
+.node-projekte .group_kaufdaten {
 	padding: 20px 10px;
 }
 
 .node-projekte .group-left .group-stammdaten h3,
 .node-projekte .group-middle .group_flaechendaten h3,
-.node-projekte .group-right .group_technische_daten h3,
-.node-type-wohnungstype .group-left h3,
-.node-type-wohnungstype .group-middle h3,
-.node-type-wohnungstype .group-right .group_wohnungstypen_tech_daten h3 {
+.node-projekte .group-right .group_technische_daten h3 {
 	color: #fff;
 	text-transform: none;
 	background: none;
@@ -806,10 +781,7 @@ input[type="radio"]:checked + label span {
 
 .node-projekte .group-left .first-column,
 .node-projekte .group-middle .first-column,
-.node-projekte .group-right .first-column,
-.node-type-wohnungstype .group-left .first-column,
-.node-type-wohnungstype .group-middle .first-column,
-.node-type-wohnungstype .group-right .first-column {
+.node-projekte .group-right .first-column {
 	color: #fff;
 	font-size: 0.9em;
 	padding: 2px 0 4px 0;
@@ -817,10 +789,7 @@ input[type="radio"]:checked + label span {
 
 .node-projekte .group-left .second-column,
 .node-projekte .group-middle .second-column,
-.node-projekte .group-right .second-column,
-.node-type-wohnungstype .group-left .second-column,
-.node-type-wohnungstype .group-middle .second-column,
-.node-type-wohnungstype .group-right .second-column {
+.node-projekte .group-right .second-column {
 	font-size: 0.9em;
 	color: #d7eed7;
 	float: right;
@@ -830,30 +799,25 @@ input[type="radio"]:checked + label span {
 	padding: 2px 0 4px 0;
 }
 
-.node-projekte .group-middle .second-column,
-.node-type-wohnungstype .group-middle .second-column {
+.node-projekte .group-middle .second-column {
 	width: 120px;
 }
 
-.node-projekte .group_kaufdaten,
-.node-type-wohnungstype .group_wohnungstypen_kaufdaten {
+.node-projekte .group_kaufdaten {
 	margin-top: 20px;
 }
 
-.node-projekte .group_kaufdaten .second-column,
-.node-type-wohnungstype .group_wohnungstypen_kaufdaten .second-column {
+.node-projekte .group_kaufdaten .second-column {
 	color: #404040;
 	font-weight: bold;
 	width: 160px;
 }
 
-.node-projekte .group_kaufdaten .first-column,
-.node-type-wohnungstype .group_wohnungstypen_kaufdaten .first-column {
+.node-projekte .group_kaufdaten .first-column {
 	color: #404040;
 }
 
-.node-projekte .group-footer,
-.node-type-wohnungstype .group-footer {
+.node-projekte .group-footer {
 	height: 20px;
 }
 
@@ -946,53 +910,4 @@ body.page-bautraeger h1.title {
 .projektimghover2:hover {
 	background: url('../images/news_corner_hover2.png') top right no-repeat;
 	outline: 1px solid #ef7900 !important;
-}
-
-.field-name-field-wohnungstyp-objekt div.field-items .field-item {
-	font-size: 0.875em;
-}
-
-body.node-type-wohnungstype .group-wht-teaser {
-	padding-bottom: 10px;
-	background: url('../images/title-bg.png') repeat-x left bottom;
-	float: left;
-}
-
-.field-name-objektart-reloaded {
-	float: left;
-}
-
-body.node-type-wohnungstype .groesse-zimmer {
-	float: left;
-	padding-left: 4px;
-	font-size: 0.875em;
-}
-
-body.node-type-wohnungstype .kaufpreis {
-	float: left;
-	font-size: 0.875em;
-	font-weight: bold;
-	padding-top: 4px;
-}
-
-body.node-type-wohnungstype .field-name-body {
-	clear: left;
-	padding-top: 10px;
-}
-
-.node-type-wohnungstype .group-left,
-.node-type-wohnungstype .group-middle,
-.node-type-wohnungstype .group_wohnungstypen_tech_daten {
-	background: #586b58 url('../images/datenbox-bg.png') repeat-x top left;
-	width: 294px;
-	margin-right: 20px;
-}
-
-.node-type-wohnungstype .group_wohnungstypen_kaufdaten {
-	background: #eaeaea url('../images/datenbox-kauf-bg.png') repeat-x top left;
-	width: 294px;
-}
-
-.clear {
-	clear: both;
 }
