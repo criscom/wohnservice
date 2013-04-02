@@ -443,10 +443,10 @@ tr.even, tr.odd
 			color: $green
 
 .outer-wrapper-aktuelle-projekte
-	overflow: auto
+	overflow: hidden
 
-.outer-wrapper-aktuelle-projekte .aktuelle-projekte-field-item .node-projekte, .weitere-projekte-field
-	float: left !important
+	.aktuelle-projekte-field-item .node-projekte, .weitere-projekte-field
+		float: left !important
 
 .field-name-field-weitere-projekte /* Container für Weiter Projekte Überschrift */
 	margin-top: 15px
@@ -536,7 +536,7 @@ tr.even, tr.odd
 				
 				div.field-name-field-team-bild div div img
 					border: 1px solid white
-					
+
 				div.field-name-title div div h2
 					background: none
 					color: white
@@ -553,6 +553,8 @@ tr.even, tr.odd
 					color: white
 					font-size: .85em
 
+.field-name-field-team-bild .field-items .field-item 
+	overflow: hidden !important
 
 /* @end Team Referenz Bauträger Detail */
 		
