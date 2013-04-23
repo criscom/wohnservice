@@ -42,9 +42,10 @@
 			$('.item-list .pager').append('<li class="pager-previous">zurück</li>');
 		}
 		
-		
-		$('input[type="checkbox"]').next('label').prepend("<span></span>");
-		$('input[type="radio"]').next('label').prepend("<span></span>");
+		//if (!$.browser.msie) {
+			$('input[type="checkbox"]').next('label').prepend("<span></span>");
+			$('input[type="radio"]').next('label').prepend("<span></span>");
+		//}
 		
 		$('.node-projekte .group-header').after($('.group_wohnungstypen'));
 		
@@ -111,6 +112,19 @@
 			$('.node-type-wohnungstype .group-middle').height(heightright-16);
 			$('.node-type-wohnungstype .group-left').height(heightright-16);
 		}
+		
 	});
+	
+	/*$(window).load(function() {
+		if ($.browser.msie) {
+			//http://wohnservice.staging.einstern.at/wohnservice/sites/default/files/styles/frontpage-slider_custom_user_mobile_1x/public/projekte/projektbild-gro%C3%9F_0.jpg?itok=mGH3BQNC
+			//http://wohnservice.staging.einstern.at/wohnservice/sites/default/files/styles/frontpage-slider/public/projekte/projektbild-gro%C3%9F_1.jpg?itok=bs_dAO7y
+			var linking = $('#flexslider_views_slideshow_main_frontpage_slider-page_1 .field-name-field-projekt-bild img').attr("src");
+			linking = linking.replace("frontpage-slider_custom_user_mobile_1x","frontpage-slider");
+			$('#flexslider_views_slideshow_main_frontpage_slider-page_1 .field-name-field-projekt-bild img').attr("src",linking);
+			$('#flexslider_views_slideshow_main_frontpage_slider-page_1 .field-name-field-projekt-bild img').attr("width","690");
+			$('#flexslider_views_slideshow_main_frontpage_slider-page_1 .field-name-field-projekt-bild img').attr("height","385");
+		}
+	});*/
 
 })(jQuery);

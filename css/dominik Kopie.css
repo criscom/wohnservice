@@ -1000,6 +1000,6 @@ body.node-type-wohnungstype .field-name-body {
 	clear: both;
 }
 
-.group-header .field-name-field-projekt-wohnungstyp .field-items .field-item { 
+.group-header .field-name-field-projekt-wohnungstyp field-items .field-item { 
 	float: none; 
 }

@@ -17,3 +17,14 @@
 // 		'class' => 'my-class',
 // 		);
 // 	}
+
+
+// Adding conditional stylesheets - criscom 15.04.2013
+
+function wohnservice_preprocess_html(&$variables) {
+  // Añadir hojas de estilo condicionales para IE
+  drupal_add_css(path_to_theme() . '/css/ie-lte-10.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 10', '!IE' => FALSE), 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/ie-lte-9.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/ie-lte-8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/ie-lte-7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
+}
